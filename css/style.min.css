@@ -554,12 +554,6 @@ a:focus-visible {
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.header-main__search:focus {
-  border: 2px solid #82D3CA;
 }
 
 .header-main__search input {
@@ -569,6 +563,7 @@ a:focus-visible {
   border: none;
   border-radius: 0;
   padding: 14px;
+  box-shadow: 0 0 2px #82D3CA;
 }
 
 .header-main__search input::-moz-placeholder {
