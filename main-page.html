@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title></title>
+</head>
+<body>
+    <header class="header">
+  <div class="header__hat">
+    <div class="header__container main-container">
+      <div class="header__body">
+        <div class="header__left">
+          <a href="#" class="header__logo">
+            <img src="img/pages/logo.svg" alt="Логотип">
+          </a>
+          <button class="header__city">Комсомольск-на-Амуре</button>
+        </div>
+        <div class="header__right">
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__link">
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li class="header__link">
+                <a href="#">Адреса магазинов</a>
+              </li>
+              <li class="header__link">
+                <a href="#">Статьи</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+79101332120" class="header__call">
+            <span>+7 (910) 133-21-20</span>
+            <span>Ежедневно с 10:00 до 22:00</span>
+          </a>
+          <button class="header__user">Войти</button>
+        </div>
+      </div>
+      <div class="header-mobile">
+        <button class="header-mobile__burger">
+          <span></span>
+        </button>
+        <a href="#" class="header-mobile__logo">
+          <img src="img/pages/logo.svg" alt="Логотип">
+        </a>
+        <div class="header-mobile__btns">
+          <button class="header-mobile__location">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle r="2.5" transform="matrix(-1 0 0 1 10 8.33203)" stroke="#1B1D1F" stroke-width="1.25"/>
+              <path d="M16.875 8.54167C16.875 10.8144 15.4945 13.222 13.8423 15.1088C13.026 16.0411 12.1687 16.8166 11.4354 17.3537C11.0682 17.6227 10.742 17.8245 10.4758 17.9562C10.1903 18.0975 10.0391 18.125 10 18.125V19.375C10.3359 19.375 10.7003 19.2397 11.0301 19.0766C11.3791 18.9039 11.7678 18.6597 12.174 18.3622C12.9875 17.7664 13.9115 16.9272 14.7827 15.9323C16.5055 13.9648 18.125 11.2682 18.125 8.54167H16.875ZM10 18.125C9.96094 18.125 9.80973 18.0975 9.52423 17.9562C9.258 17.8245 8.93184 17.6227 8.56461 17.3537C7.83125 16.8166 6.97401 16.0411 6.15771 15.1088C4.5055 13.222 3.125 10.8144 3.125 8.54167H1.875C1.875 11.2682 3.4945 13.9648 5.21729 15.9323C6.08849 16.9272 7.0125 17.7664 7.82602 18.3622C8.23222 18.6597 8.62091 18.9039 8.96991 19.0766C9.29965 19.2397 9.66406 19.375 10 19.375V18.125ZM3.125 8.54167C3.125 4.87625 6.18633 1.875 10 1.875V0.625C5.5294 0.625 1.875 4.15293 1.875 8.54167H3.125ZM10 1.875C13.8137 1.875 16.875 4.87625 16.875 8.54167H18.125C18.125 4.15293 14.4706 0.625 10 0.625V1.875Z" fill="#1B1D1F"/>
+            </svg>
+          </button>
+          <a href="#" class="header-mobile__tel">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.708 13.9789C11.4052 15.2817 8.06855 14.0575 5.25551 11.2445C2.44248 8.43145 1.21826 5.09485 2.52114 3.79197L3.37898 2.93412C3.9712 2.3419 4.94703 2.35756 5.55856 2.96909L6.88728 4.29781C7.49881 4.90934 7.51447 5.88517 6.92225 6.47739L6.73799 6.66165C6.41825 6.98139 6.38696 7.49721 6.68407 7.85725C6.97064 8.20452 7.2796 8.55043 7.61458 8.88542C7.94957 9.2204 8.29548 9.52936 8.64275 9.81593C9.00279 10.113 9.51861 10.0818 9.83835 9.76201L10.0226 9.57775C10.6148 8.98553 11.5907 9.00119 12.2022 9.61272L13.5309 10.9414C14.1424 11.553 14.1581 12.5288 13.5659 13.121L12.708 13.9789Z" stroke="#1B1D1F"/>
+              <path d="M11.7508 6.5008C11.5881 6.10401 11.3457 5.73226 11.0235 5.41008C10.7196 5.10609 10.3714 4.87311 9.9998 4.71114" stroke="#1B1D1F" stroke-linecap="round"/>
+              <path d="M10.0001 2.4413C10.8899 2.76363 11.7247 3.28146 12.438 3.99479C13.1692 4.72602 13.695 5.58491 14.0154 6.49978" stroke="#1B1D1F" stroke-linecap="round"/>
+            </svg> 
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="header__container main-container">
+      <div class="header-main__body">
+        <div class="header-main__btn">
+          <button class="header-main__burger">
+            <span></span>
+          </button>
+          <span>Каталог</span>
+        </div>
+        <div class="header-main__search">
+          <input type="search" placeholder="Поиск товара по названию">
+          <button type="submit">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="11" r="8" stroke="#1B1D1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.5 16.957L21.5 21.957" stroke="#1B1D1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="header-main__baskets">
+          <a href="#" class="header-main__basket">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2V8.69048M12 8.69048L5.58333 6.88095M12 8.69048L18.4167 10.5M5.58333 6.88095L2.83333 13.4048M5.58333 6.88095L8.33333 13.4048M5.58333 6.88095L3.75 6.42857M18.4167 10.5L15.6667 17.0238M18.4167 10.5L21.1667 17.0238M18.4167 10.5L20.25 10.9524M15.6667 17.0238H13.8333V17.4167C13.8333 19.948 15.8854 22 18.4167 22V22C20.948 22 23 19.948 23 17.4167V17.0238H21.1667M15.6667 17.0238H21.1667M2.83333 13.4048H1V13.7976C1 16.3289 3.05203 18.381 5.58333 18.381V18.381C8.11464 18.381 10.1667 16.3289 10.1667 13.7976V13.4048H8.33333M2.83333 13.4048H8.33333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="header-main__number">0</div>
+          </a>
+          <a href="#" class="header-main__basket">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.82903 13.2886L9.81886 20.6903C11.0027 21.944 12.9973 21.944 14.1811 20.6903L21.171 13.2886C23.6097 10.7061 23.6097 6.51923 21.171 3.93681C18.7323 1.3544 14.7784 1.3544 12.3397 3.93681V3.93681C12.1553 4.13204 11.8447 4.13204 11.6603 3.93681V3.93681C9.22164 1.3544 5.26772 1.3544 2.82902 3.93681C0.390324 6.51923 0.390326 10.7061 2.82903 13.2886Z" stroke-width="1.5"/>
+            </svg>              
+            <div class="header-main__number">0</div>
+          </a>
+          <a href="#" class="header-main__basket">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 2.07422L2.29936 2.33409C3.16136 2.50649 3.80973 3.22154 3.8972 4.09624L4.08 5.92422M4.08 5.92422L5.1886 15.1625C5.30922 16.1677 6.16195 16.9242 7.17435 16.9242H17.5173C19.1233 16.9242 20.5233 15.8312 20.9128 14.2731L22.2855 8.78205C22.6485 7.33042 21.5505 5.92422 20.0542 5.92422H4.08Z" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="8.15" cy="20.775" r="1.65"/>
+              <circle cx="18.0504" cy="20.775" r="1.65"/>
+            </svg>              
+            <div class="header-main__number">0</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-catalog">
+    <div class="header__container main-container">
+      <div class="header-catalog__body">
+        <div class="header-catalog__menu">
+          <ul class="header-catalog__items">
+            <li id="tabBtn" data-tab="#tabItem-1" class="header-catalog__item active">
+              Одежда
+            </li>
+            <li id="tabBtn" data-tab="#tabItem-2" class="header-catalog__item">
+              Обувь
+            </li>
+            <li id="tabBtn" data-tab="#tabItem-3" class="header-catalog__item">
+              Туризм и активный отдых
+            </li>
+            <li id="tabBtn" data-tab="#tabItem-4" class="header-catalog__item">
+              Водный туризм
+            </li>
+            <li id="tabBtn" data-tab="#tabItem-5" class="header-catalog__item">
+              Дайвинг и плавание
+            </li>
+            <li id="tabBtn" data-tab="#tabItem-6" class="header-catalog__item">
+              Подводная охота
+            </li>
+            <li id="tabBtn" data-tab="#tabItem-7" class="header-catalog__item">
+              Альпинистское снаряжение
+            </li>
+            <li id="tabBtn" data-tab="#tabItem-8" class="header-catalog__item">
+              Зимний спорт
+            </li>
+            <li id="tabBtn" data-tab="#tabItem-9" class="header-catalog__item">
+              Акции и распродажа
+            </li>
+          </ul>
+        </div>
+        <div class="header-catalog__content">
+          <div id="tabItem-1" class="header-catalog__blocks tabItem active">
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мужчинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Аксессуары для обуви</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Носки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шнурки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Стельки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Мешки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сушилки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Средства для ухода</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Девочкам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мальчикам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tabItem-2" class="header-catalog__blocks tabItem">
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мужчинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Аксессуары для обуви</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Носки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шнурки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Стельки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Мешки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сушилки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Средства для ухода</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Девочкам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мальчикам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tabItem-3" class="header-catalog__blocks tabItem">
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мужчинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Аксессуары для обуви</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Носки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шнурки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Стельки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Мешки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сушилки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Средства для ухода</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Девочкам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мальчикам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tabItem-4" class="header-catalog__blocks tabItem">
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мужчинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Аксессуары для обуви</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Носки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шнурки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Стельки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Мешки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сушилки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Средства для ухода</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Девочкам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мальчикам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tabItem-5" class="header-catalog__blocks tabItem">
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мужчинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Аксессуары для обуви</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Носки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шнурки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Стельки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Мешки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сушилки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Средства для ухода</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Девочкам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мальчикам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tabItem-6" class="header-catalog__blocks tabItem">
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мужчинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Аксессуары для обуви</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Носки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шнурки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Стельки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Мешки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сушилки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Средства для ухода</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Девочкам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мальчикам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tabItem-7" class="header-catalog__blocks tabItem">
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мужчинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Аксессуары для обуви</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Носки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шнурки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Стельки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Мешки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сушилки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Средства для ухода</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Девочкам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мальчикам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tabItem-8" class="header-catalog__blocks tabItem">
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мужчинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Аксессуары для обуви</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Носки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шнурки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Стельки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Мешки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сушилки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Средства для ухода</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Девочкам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мальчикам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tabItem-9" class="header-catalog__blocks tabItem">
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мужчинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Аксессуары для обуви</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Носки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шнурки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Стельки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Мешки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сушилки для обуви</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Средства для ухода</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Девочкам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Мальчикам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-catalog__block">
+              <h4>Женщинам</h4>
+              <ul class="header-catalog__links">
+                <li class="header-catalog__link">
+                  <a href="#">Кроссовки</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Кеды</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Сандали</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Шлепанцы</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Слипоны</a>
+                </li>
+                <li class="header-catalog__link">
+                  <a href="#">Полуботинки</a>
+                </li>
+                <li class="header-catalog__link header-catalog__link-all">
+                  <a href="#">Показать все</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="menu-footer">
+      <div class="main-container">
+        <div class="menu-footer__links">
+          <a href="#" class="menu-footer__link active">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#9495A9" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.55469 15.3515C3.55469 13.8019 4.28426 12.3428 5.52392 11.4131L13.0453 5.77202C14.7957 4.4592 17.2026 4.4592 18.953 5.77203L26.4743 11.4131C27.714 12.3428 28.4436 13.8019 28.4436 15.3515V23.5225C28.4436 26.2414 26.2394 28.4455 23.5205 28.4455H21.1597C20.48 28.4455 19.929 27.8945 19.929 27.2148V23.4404C19.929 22.0809 18.8269 20.9789 17.4674 20.9789H14.5308C13.1714 20.9789 12.0693 22.0809 12.0693 23.4404V27.2148C12.0693 27.8945 11.5183 28.4455 10.8385 28.4455H8.47777C5.75883 28.4455 3.55469 26.2414 3.55469 23.5225L3.55469 15.3515Z" stroke-width="1.84615"/>
+            </svg>
+            <span class="menu-footer__title">Главная</span>
+          </a>
+          <a href="#" class="menu-footer__link">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#9495A9" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="19.267" cy="13.9311" r="10.3784" stroke-width="1.84889" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M26.666 21.33L31.9993 26.6634" stroke-width="1.84889" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.88867 5.33789H1.77756" stroke-width="1.84889" stroke-linecap="round"/>
+              <path d="M5.33203 14.2227H1.77648" stroke-width="1.84889" stroke-linecap="round"/>
+              <path d="M8.88867 23.1113H1.77756" stroke-width="1.84889" stroke-linecap="round"/>
+            </svg>              
+            <span class="menu-footer__title">Каталог</span>
+          </a>
+          <a href="#" class="menu-footer__link marked menu-footer__link-cart">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#9495A9" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.55469 5.33594L4.8804 5.60108C5.94132 5.81326 6.73932 6.69332 6.84697 7.76988L7.03913 9.69149M7.03913 9.69149L8.27228 19.9677C8.42074 21.2048 9.47025 22.1359 10.7163 22.1359H21.9691C23.9458 22.1359 25.6688 20.7907 26.1482 18.873L27.5643 13.2088C28.0109 11.4222 26.6596 9.69149 24.818 9.69149H7.03913Z" stroke-width="1.84615" stroke-linecap="round"/>
+              <circle cx="11.644" cy="26.4917" r="1.86667"/>
+              <circle cx="22.8432" cy="26.4917" r="1.86667"/>
+            </svg>              
+            <span class="menu-footer__title">Корзина</span>
+          </a>
+          <a href="#" class="menu-footer__link marked menu-footer__link-liked">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#9495A9" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.62389 17.7613L13.3498 25.7199C14.8001 27.2139 17.1981 27.2139 18.6484 25.7199L26.3744 17.7613C29.1333 14.9193 29.1333 10.3114 26.3744 7.46941C23.6154 4.62738 19.1423 4.62739 16.3834 7.46941V7.46941C16.173 7.6861 15.8252 7.6861 15.6149 7.46941V7.46941C12.8559 4.62739 8.38282 4.62738 5.62389 7.46941C2.86495 10.3114 2.86496 14.9193 5.62389 17.7613Z" stroke-width="1.84615"/>
+            </svg>                        
+            <span class="menu-footer__title">Избранное</span>
+          </a>
+          <a href="#" class="menu-footer__link">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#9495A9" xmlns="http://www.w3.org/2000/svg">
+              <circle r="5.68889" transform="matrix(-1 0 0 1 16.0025 9.24162)" stroke-width="1.84889"/>
+              <path d="M6.04688 23.3714C6.04688 22.1477 6.81609 21.0562 7.96843 20.6447V20.6447C13.1637 18.7892 18.8411 18.7892 24.0364 20.6447V20.6447C25.1888 21.0562 25.958 22.1477 25.958 23.3714V25.709C25.958 27.1515 24.6804 28.2595 23.2524 28.0555L20.5279 27.6663C17.5262 27.2375 14.4787 27.2375 11.4769 27.6663L8.75246 28.0555C7.32447 28.2595 6.04688 27.1515 6.04688 25.709V23.3714Z" stroke-width="1.84889"/>
+            </svg>              
+            <span class="menu-footer__title">Профиль</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      
+    </main>
+    
+    <footer></footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
