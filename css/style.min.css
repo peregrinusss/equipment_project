@@ -554,6 +554,8 @@ a:focus-visible {
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .header-main__search:focus {
@@ -565,9 +567,6 @@ a:focus-visible {
   height: 100%;
   background: #D1DAE0;
   border: none;
-  border-radius: 0;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
   padding: 14px;
 }
 
@@ -588,8 +587,6 @@ a:focus-visible {
 .header-main__search button {
   height: 100%;
   background: #D1DAE0;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
   border: none;
   padding: 0 14px;
   display: flex;
