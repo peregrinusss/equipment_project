@@ -567,6 +567,7 @@ a:focus-visible {
   height: 100%;
   background: #D1DAE0;
   border: none;
+  border-radius: 0;
   padding: 14px;
 }
 
@@ -593,7 +594,6 @@ a:focus-visible {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin-left: -1px;
 }
 
 .header-main__search button svg {
