@@ -577,6 +577,9 @@ a:focus-visible {
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .header-main__search input {
@@ -585,10 +588,8 @@ a:focus-visible {
   height: 100%;
   background: #D1DAE0;
   border: none;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
   padding: 14px;
-  padding-right: 0;
+  padding-right: 52px;
 }
 
 .header-main__search input::-moz-placeholder {
@@ -609,13 +610,13 @@ a:focus-visible {
   height: 100%;
   background: #D1DAE0;
   border: none;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
   padding: 0 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: absolute;
+  right: 0;
 }
 
 .header-main__search button svg {
