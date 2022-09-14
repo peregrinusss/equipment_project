@@ -1780,7 +1780,7 @@ input[type=number] {
 
 .choose-color.active {
   border: 1px solid #82D3CA;
-  outline: 1px solid #82D3CA;
+  box-shadow: 0px 0px 0px 1px #82D3CA;
 }
 
 .choose-size.active {
@@ -2122,8 +2122,13 @@ input[type=number] {
   margin-bottom: 5px;
 }
 
+.product-color__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .product-color__items > :not(:last-child) {
-  margin-right: 2px;
+  margin-right: 8px;
 }
 
 .product-color__item {
@@ -2134,6 +2139,10 @@ input[type=number] {
   border: 1px solid #D2D9DF;
   border-radius: 2px;
   cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-color__item:hover {
@@ -2141,34 +2150,35 @@ input[type=number] {
   outline: 1px solid #82D3CA;
 }
 
-.product-color__item span {
-  display: block;
+.product-color__item::after {
+  content: "";
+  position: absolute;
   width: 16px;
   height: 16px;
   border-radius: 50%;
 }
 
-.product-color__item-1 span {
+.product-color__item-1::after {
   background: #BE2B3C;
 }
 
-.product-color__item-2 span {
+.product-color__item-2::after {
   background: #3E93CC;
 }
 
-.product-color__item-3 span {
+.product-color__item-3::after {
   background: #DAB10D;
 }
 
-.product-color__item-4 span {
+.product-color__item-4::after {
   background: #800080;
 }
 
-.product-color__item-5 span {
+.product-color__item-5::after {
   background: #808080;
 }
 
-.product-color__item-6 span {
+.product-color__item-6::after {
   background: #9DB67C;
 }
 
@@ -2591,35 +2601,41 @@ input[type=number] {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.params-mobile-color__item span {
+.params-mobile-color__item::after {
+  content: "";
+  position: absolute;
   width: 26px;
   height: 26px;
   border-radius: 50%;
 }
 
-.params-mobile-color__item-1 span {
+.params-mobile-color__item-1::after {
   background: #9E1626;
 }
 
-.params-mobile-color__item-2 span {
+.params-mobile-color__item-2::after {
   background: #9DB67C;
 }
 
-.params-mobile-color__item-3 span {
+.params-mobile-color__item-3::after {
   background: #3E93CC;
 }
 
-.params-mobile-color__item-4 span {
+.params-mobile-color__item-4::after {
   background: #DAB10D;
 }
 
-.params-mobile-color__item-5 span {
+.params-mobile-color__item-5::after {
   background: #800080;
 }
 
-.params-mobile-color__item-6 span {
+.params-mobile-color__item-6::after {
   background: #808080;
 }
 
@@ -5849,6 +5865,11 @@ input[type=number] {
   .product-card {
     max-width: 100%;
     width: 100%;
+  }
+
+  .product-card:hover {
+    scale: inherit;
+    box-shadow: none;
   }
 
   .product-card__mobile {
