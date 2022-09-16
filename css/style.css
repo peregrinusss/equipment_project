@@ -1787,18 +1787,43 @@ input[type=number] {
   color: #82D3CA;
 }
 
+.main-slider .swiper-button-prev {
+  top: 140px;
+  bottom: 0;
+  margin: 0;
+}
+
+.main-slider .swiper-button-next {
+  top: 140px;
+  bottom: 0;
+  margin: 0;
+}
+
+.main-slider .product-card:hover {
+  box-shadow: 0px 0px 0px 2px #82d3ca;
+  scale: 0.985;
+  padding-bottom: 230px;
+  transition: 0.3s;
+}
+
+.main-slider .product-card:hover:hover .product-card__btns {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s;
+}
+
+.main-slider .product-card:hover:hover .product-card__footer {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.8s;
+}
+
 .product-card {
   width: 100%;
   max-width: 260px;
   min-width: 0;
   background: #ffffff;
-  transition: 0.2s;
-}
-
-.product-card:hover {
-  box-shadow: 0px 0px 0px 2px #82d3ca;
-  scale: 0.985;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .product-card__link {
@@ -1833,24 +1858,21 @@ input[type=number] {
   width: 100%;
   background: #ffffff;
   padding: 0 20px 20px;
-  box-shadow: -2px 2px 0px #82D3CA, 2px 2px 0px 0px #82D3CA;
   opacity: 0;
   visibility: hidden;
-  transition: 0.1s;
+  transition: 0.2s;
   z-index: 3;
 }
 
 .product-card__btns {
   position: absolute;
   z-index: 3;
-  bottom: -68px;
-  box-shadow: -2px 2px 0px #82D3CA, 2px 2px 0px 0px #82D3CA;
   padding: 0 20px 20px;
   background: #ffffff;
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 
 .product-card__btns-wrapper {
@@ -3697,10 +3719,12 @@ input[type=number] {
   justify-content: center;
   padding: 20px;
   text-align: center;
+  transition: 0.2s;
 }
 
 .categories__card:hover {
-  outline: 2px solid #82D3CA;
+  box-shadow: 0px 0px 0px 2px #82d3ca;
+  transition: 0.2s;
 }
 
 .categories__icon {
@@ -3739,6 +3763,7 @@ input[type=number] {
   min-width: 0;
   height: 140px;
   overflow: hidden;
+  transition: 0.2s;
 }
 
 .receipt__card-slider {
@@ -3749,7 +3774,8 @@ input[type=number] {
 }
 
 .receipt__card:hover {
-  outline: 2px solid #82D3CA;
+  box-shadow: 0px 0px 0px 2px #82d3ca;
+  transition: 0.2s;
 }
 
 .receipt__img {
@@ -3870,13 +3896,16 @@ input[type=number] {
 
 .recommend-card:hover {
   scale: inherit;
+  box-shadow: 0px 2px 0px 0px #ffffff, 0px 0px 0px 2px #82d3ca;
+  transition: 0.2s;
 }
 
 .recommend-card:hover .product-card__btns {
   opacity: 1;
   visibility: visible;
+  box-shadow: -2px 2px 0px #82D3CA, 2px 2px 0px 0px #82D3CA;
   z-index: 3;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 
 .recommend-card:hover .product-card__sBtns {
@@ -4454,12 +4483,15 @@ input[type=number] {
 
 .goods-card:hover {
   scale: inherit;
+  box-shadow: 0px 2px 0px 0px #ffffff, 0px 0px 0px 2px #82d3ca;
+  transition: 0.2s;
 }
 
 .goods-card:hover .product-card__footer {
   opacity: 1;
   visibility: visible;
-  transition: 0.1s;
+  box-shadow: -2px 2px 0px #82D3CA, 2px 2px 0px 0px #82D3CA;
+  transition: 0.2s;
 }
 
 .goods-card:hover .product-card__sBtns {
@@ -4715,6 +4747,18 @@ input[type=number] {
   margin-top: 60px;
 }
 
+.articles .swiper-button-prev {
+  top: 120px;
+  bottom: 0;
+  margin: 0;
+}
+
+.articles .swiper-button-next {
+  top: 120px;
+  bottom: 0;
+  margin: 0;
+}
+
 .articles__title {
   font-weight: 700;
   font-size: 16px;
@@ -4735,11 +4779,21 @@ input[type=number] {
   background: #ffffff;
 }
 
+.articles__card {
+  transition: 0.2s;
+}
+
+.articles__card:hover {
+  padding-bottom: 36px;
+  box-shadow: 0px 0px 0px 2px #82d3ca;
+  scale: 0.985;
+  transition: 0.2s;
+}
+
 .articles__card:hover .articles__more {
   opacity: 1;
   visibility: visible;
-  box-shadow: 0px 0px 0px 2px #82d3ca;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .articles__btn {
