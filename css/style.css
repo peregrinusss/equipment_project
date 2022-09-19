@@ -5046,6 +5046,7 @@ input[type=number] {
 
 .product-slider {
   max-width: 540px;
+  height: 100%;
   background: #fff;
   position: relative;
 }
@@ -5217,7 +5218,9 @@ input[type=number] {
 }
 
 .product-nav {
+  height: 100%;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 }
 
