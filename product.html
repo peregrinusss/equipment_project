@@ -3587,11 +3587,11 @@
               <span>В 2 магазинах можно забрать через 15 минут:</span>
               <ul class="descript-get__list">
                 <li class="descript-get__item">
-                  <button class="descript-get__btn">Пр Гагарина:</button>
+                  <button id="have-one" class="descript-get__btn">Пр Гагарина:</button>
                   10шт
                 </li>
                 <li class="descript-get__item">
-                  <button class="descript-get__btn">Пушкина:</button>
+                  <button id="have-one" class="descript-get__btn">Пушкина:</button>
                   12шт
                 </li>
               </ul>
@@ -6606,7 +6606,53 @@
             <button class="popup-buy__btn main-btn">Купить</button>
           </form>
         </div>
-        <div class="popup-buy__overlay"></div>
+        <div class="main-overlay"></div>
+      </div>
+      <div class="popup-have">
+        <div class="popup-have__body">
+          <button class="popup-buy__close" id="have-close">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"/>
+            </svg>
+          </button>
+          <div class="params-mobile__header popup-buy__header">
+            <button id="have-close" class="params-mobile__close close-btn">
+              <img src="img/icons/close.svg" alt="">
+            </button>
+          </div>
+          <div class="popup-have__hat">
+            <h1 class="popup-have__title">Доступно для самовывоза</h1>
+            <span class="popup-have__subtitle">Гарантируем наличие товара в магазине при оформлении резерва</span>
+            <div class="popup-have__nav">
+              <div id="shopsBtn" data-shops="#shopsItem-1" class="descript-tabs__btn shops__btn active">Список</div>
+              <div id="shopsBtn" data-shops="#shopsItem-2" class="descript-tabs__btn shops__btn">Карта</div>
+            </div>
+          </div>
+          <div class="popup-have__content">
+            <div id="shopsItem-1" class="popup-have__text popup-have__item shopsItem active">
+              <div class="popup-have__hat-desktop">
+                <h1 class="popup-have__title">Доступно для самовывоза</h1>
+                <span class="popup-have__subtitle">Гарантируем наличие товара в магазине при оформлении резерва</span>
+              </div>
+              <div class="popup-have__cards">
+                <div class="shops-card">
+                  <h3 class="shops-card__title">Пр Гагарина: 10шт</h3>
+                  <span class="shops-card__subttile">ул. Пушкина, 36, Нижний Новгород, Нижегородская обл.</span>
+                  <span class="shops-card__work">Сегодня с 10:00 до 22:00</span>
+                </div>
+                <div class="shops-card">
+                  <h3 class="shops-card__title">Пр Гагарина: 10шт</h3>
+                  <span class="shops-card__subttile">ул. Пушкина, 36, Нижний Новгород, Нижегородская обл.</span>
+                  <span class="shops-card__work">Сегодня с 10:00 до 22:00</span>
+                </div>
+              </div>
+            </div>
+            <div id="shopsItem-2" class="popup-have__item popup-have__item-map shopsItem">
+              <div class="popup-have__map" id="map"></div>
+            </div>
+          </div>
+        </div>
+        <div class="main-overlay"></div>
       </div>
       <button class="scroll-top" title="Наверх">
         <img src="img/icons/scroll-top.svg" alt="">
@@ -6692,6 +6738,7 @@
     </div>
   </div>
 </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d889cf05-49b0-4f2f-b7a7-17edfafbf91b&lang=ru_RU"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
