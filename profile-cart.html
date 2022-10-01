@@ -3110,302 +3110,154 @@
       <div class="path-main">
         <div class="main-container">
           <a href="#" class="path-main__link">Главная</a>
-          <span class="path-main__link-current">Статьи</span>
+          <span class="path-main__link-current">Моя корзина</span>
         </div>
       </div>
+
       <div class="main-container">
-        <div class="clauses">
-          <h1 class="clauses__title title-h1">Читайте полезные статьи</h1>
-          <div class="catalog__content clauses__content">
-            <aside class="clauses-aside">
-              <div class="clauses-aside__item">
-                <span class="clauses-aside__title">Водный спорт</span>
-                <div class="clauses-aside__links">
-                  <a href="#" class="clauses-aside__link">Как выбрать сап-борд</a>
-                  <a href="#" class="clauses-aside__link">5 способов перенести лодку</a>
-                  <a href="#" class="clauses-aside__link">Как надуть матрас</a>
+        <h1 class="profile__title title-h1">Личный кабинет</h1>
+        <div class="shops__nav profile__menu">
+          <a href="#" class="descript-tabs__btn">Мой профиль</a>
+          <a href="#" class="descript-tabs__btn active">Моя корзина</a>
+          <a href="#" class="descript-tabs__btn">История покупок</a>
+          <a href="#" class="descript-tabs__btn">Дисконтная система</a>
+          <a href="#" class="descript-tabs__btn">Новостные рассылки</a>
+        </div>
+        <h1 class="profile__back title-h1">Мой профиль</h1>
+      </div>
+
+      <section class="cart">
+        <div class="main-container">
+          <div class="clause__content cart__content">
+            <div class="cart-body">
+              <div class="cart-body__header">
+                <span>Состав заказа, 2 шт</span>
+                <span class="cart-body__delivery">Доставка при заказе от 7000 ₽ — бесплатна</span>
+              </div>
+              <div class="cart-body-item">
+                <picture class="cart-body-item__img">
+                  <source srcset="img/pages/product/product.webp" type="image/webp">
+                  <img src="img/pages/product/product.jpg" alt="Веревка Венто STATIC 11мм">
+                </picture>
+                <div class="cart-body-item__info">
+                  <div class="cart-body-item__hat">
+                    <h3 class="cart-body-item__title">Веревка Венто STATIC 11мм</h3>
+                    <span class="cart-body-item__code">Код товара: 12312313</span>
+                    <div class="cart-body-item__params">
+                      <span>Цвет: красный</span>
+                      <span>Размер: 120м</span>
+                    </div>
+                    <span class="cart-body-item__available">Доступно для заказа: <span>10 шт</span></span>
+                  </div>
+                  <div class="cart-body-item__amount">
+                    <div class="cart-body-item__amount-btn">
+                      <button disabled="" class="product-card__amount-remove">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.25 11.25H7C6.58579 11.25 6.25 11.5858 6.25 12C6.25 12.4142 6.58579 12.75 7 12.75H11.25L12.75 12.75H17C17.4142 12.75 17.75 12.4142 17.75 12C17.75 11.5858 17.4142 11.25 17 11.25H12.75H11.25Z"></path>
+                        </svg>           
+                      </button>
+                      <span>1</span>
+                      <button class="product-card__amount-add">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.75 7C12.75 6.58579 12.4142 6.25 12 6.25C11.5858 6.25 11.25 6.58579 11.25 7V11.25H7C6.58579 11.25 6.25 11.5858 6.25 12C6.25 12.4142 6.58579 12.75 7 12.75H11.25V17C11.25 17.4142 11.5858 17.75 12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V12.75H17C17.4142 12.75 17.75 12.4142 17.75 12C17.75 11.5858 17.4142 11.25 17 11.25H12.75V7Z"></path>
+                        </svg>  
+                      </button>
+                    </div>
+                    <span class="cart-body-item__one">150 ₽ / шт</span>
+                  </div>
+                  <div class="cart-body-item__price">
+                    <span class="cart-body-item__price-new">300 ₽</span>
+                    <span class="cart-body-item__price-old">322 ₽</span>
+                  </div>
+                </div>
+                <button class="cart-body-item__delete">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9495A9" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.05063 8.73418C4.20573 7.60763 5.00954 6 6.41772 6H17.5823C18.9905 6 19.7943 7.60763 18.9494 8.73418V8.73418C18.3331 9.55584 18 10.5552 18 11.5823V18C18 20.2091 16.2091 22 14 22H10C7.79086 22 6 20.2091 6 18V11.5823C6 10.5552 5.66688 9.55584 5.05063 8.73418V8.73418Z" stroke-width="1.5"/>
+                    <path d="M14 17L14 11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 17L10 11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 6L15.4558 4.36754C15.1836 3.55086 14.4193 3 13.5585 3H10.4415C9.58066 3 8.81638 3.55086 8.54415 4.36754L8 6" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>                    
+                </button>
+              </div>
+              <div class="cart-body-item">
+                <picture class="cart-body-item__img">
+                  <source srcset="img/pages/product/product.webp" type="image/webp">
+                  <img src="img/pages/product/product.jpg" alt="Веревка Венто STATIC 11мм">
+                </picture>
+                <div class="cart-body-item__info">
+                  <div class="cart-body-item__hat">
+                    <h3 class="cart-body-item__title">Веревка Венто STATIC 11мм Венто STATIC</h3>
+                    <span class="cart-body-item__code">Код товара: 12312313</span>
+                    <div class="cart-body-item__params">
+                      <span>Цвет: красный</span>
+                    </div>
+                    <span class="cart-body-item__available">Доступно для заказа: <span>10 шт</span></span>
+                  </div>
+                  <div class="cart-body-item__amount">
+                    <div class="cart-body-item__amount-btn">
+                      <button disabled="" class="product-card__amount-remove">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.25 11.25H7C6.58579 11.25 6.25 11.5858 6.25 12C6.25 12.4142 6.58579 12.75 7 12.75H11.25L12.75 12.75H17C17.4142 12.75 17.75 12.4142 17.75 12C17.75 11.5858 17.4142 11.25 17 11.25H12.75H11.25Z"></path>
+                        </svg>           
+                      </button>
+                      <span>1</span>
+                      <button class="product-card__amount-add">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.75 7C12.75 6.58579 12.4142 6.25 12 6.25C11.5858 6.25 11.25 6.58579 11.25 7V11.25H7C6.58579 11.25 6.25 11.5858 6.25 12C6.25 12.4142 6.58579 12.75 7 12.75H11.25V17C11.25 17.4142 11.5858 17.75 12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V12.75H17C17.4142 12.75 17.75 12.4142 17.75 12C17.75 11.5858 17.4142 11.25 17 11.25H12.75V7Z"></path>
+                        </svg>  
+                      </button>
+                    </div>
+                    <span class="cart-body-item__one">150 ₽ / шт</span>
+                  </div>
+                  <div class="cart-body-item__price">
+                    <span class="cart-body-item__price-new">300 ₽</span>
+                    <span class="cart-body-item__price-old">322 ₽</span>
+                  </div>
+                </div>
+                <button class="cart-body-item__delete">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9495A9" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.05063 8.73418C4.20573 7.60763 5.00954 6 6.41772 6H17.5823C18.9905 6 19.7943 7.60763 18.9494 8.73418V8.73418C18.3331 9.55584 18 10.5552 18 11.5823V18C18 20.2091 16.2091 22 14 22H10C7.79086 22 6 20.2091 6 18V11.5823C6 10.5552 5.66688 9.55584 5.05063 8.73418V8.73418Z" stroke-width="1.5"/>
+                    <path d="M14 17L14 11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 17L10 11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 6L15.4558 4.36754C15.1836 3.55086 14.4193 3 13.5585 3H10.4415C9.58066 3 8.81638 3.55086 8.54415 4.36754L8 6" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>                    
+                </button>
+              </div>
+              <div class="cart-body-promo">
+                <div class="cart-body-item__img"></div>
+                <div class="cart-body-promo__wrapper">
+                  <h3 class="cart-body-item__title cart-body-promo__title">У вас есть промокод?</h3>
+                  <span class="cart-body-promo__subtitle">Номер купона</span>
+                  <form class="cart-body-promo__form">
+                    <input type="number" class="cart-body-promo__input" placeholder="Введите номер купона">
+                    <button class="cart-body-promo__btn trans-btn">Применить</button>
+                  </form>
                 </div>
               </div>
-              <div class="clauses-aside__item">
-                <span class="clauses-aside__title">Палатки и все о них</span>
-                <div class="clauses-aside__links">
-                  <a href="#" class="clauses-aside__link">Как выбрать сап-борд</a>
-                  <a href="#" class="clauses-aside__link">5 способов перенести лодку</a>
-                  <a href="#" class="clauses-aside__link">Как надуть матрас</a>
+            </div>
+            <div class="cart-aside">
+              <div class="cart-aside__body">
+                <h2 class="order-aside__title">Ваш заказ</h2>
+                <div class="cart-aside__line">
+                  <span class="cart-aside__text">Товары, 3 шт</span>
+                  <span class="cart-aside__number">450 ₽</span>
+                </div>
+                <div class="cart-aside__line">
+                  <span class="cart-aside__text">Скидка</span>
+                  <span class="cart-aside__number">-22 ₽</span>
+                </div>
+                <div class="cart-aside__footer">
+                  <div class="cart-aside__total">
+                    <span class="cart-aside__text">Итого</span>
+                    <span class="cart-aside__number cart-aside__number-total">450 ₽</span>
+                  </div>
+                  <div class="cart-aside__btn main-btn">Оформить заказ</div>
                 </div>
               </div>
-              <div class="clauses-aside__item">
-                <span class="clauses-aside__title">Сёрфинг</span>
-                <div class="clauses-aside__links">
-                  <a href="#" class="clauses-aside__link">Как выбрать сап-борд</a>
-                  <a href="#" class="clauses-aside__link">5 способов перенести лодку</a>
-                  <a href="#" class="clauses-aside__link">Как надуть матрас</a>
-                </div>
-              </div>
-              <div class="clauses-aside__item">
-                <span class="clauses-aside__title">Зимний спорт</span>
-                <div class="clauses-aside__links">
-                  <a href="#" class="clauses-aside__link">Как выбрать сап-борд</a>
-                  <a href="#" class="clauses-aside__link">5 способов перенести лодку</a>
-                  <a href="#" class="clauses-aside__link">Как надуть матрас</a>
-                </div>
-              </div>
-              <div class="clauses-aside__item">
-                <span class="clauses-aside__title">Дайвинг и плавание</span>
-                <div class="clauses-aside__links">
-                  <a href="#" class="clauses-aside__link">Как выбрать сап-борд</a>
-                  <a href="#" class="clauses-aside__link">5 способов перенести лодку</a>
-                  <a href="#" class="clauses-aside__link">Как надуть матрас</a>
-                </div>
-              </div>
-              <div class="clauses-aside__item">
-                <span class="clauses-aside__title">Дайвинг</span>
-                <div class="clauses-aside__links">
-                  <a href="#" class="clauses-aside__link">Как выбрать сап-борд</a>
-                  <a href="#" class="clauses-aside__link">5 способов перенести лодку</a>
-                  <a href="#" class="clauses-aside__link">Как надуть матрас</a>
-                </div>
-              </div>
-              <div class="clauses-aside__item">
-                <span class="clauses-aside__title">Одежда для отдыха</span>
-                <div class="clauses-aside__links">
-                  <a href="#" class="clauses-aside__link">Как выбрать сап-борд</a>
-                  <a href="#" class="clauses-aside__link">5 способов перенести лодку</a>
-                  <a href="#" class="clauses-aside__link">Как надуть матрас</a>
-                </div>
-              </div>
-              <div class="clauses-aside__item">
-                <span class="clauses-aside__title">Альпинизм</span>
-                <div class="clauses-aside__links">
-                  <a href="#" class="clauses-aside__link">Как выбрать сап-борд</a>
-                  <a href="#" class="clauses-aside__link">5 способов перенести лодку</a>
-                  <a href="#" class="clauses-aside__link">Как надуть матрас</a>
-                </div>
-              </div>
-              <div class="clauses-aside__item">
-                <span class="clauses-aside__title">Подводная охота</span>
-                <div class="clauses-aside__links">
-                  <a href="#" class="clauses-aside__link">Как выбрать сап-борд</a>
-                  <a href="#" class="clauses-aside__link">5 способов перенести лодку</a>
-                  <a href="#" class="clauses-aside__link">Как надуть матрас</a>
-                </div>
-              </div>
-            </aside>
-            <section class="clauses-content">
-              <div class="clauses-content__cards">
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки и далее как сделать морской узел</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки и далее как сделать морской узел</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки и далее как сделать морской узел</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки и далее как сделать морской узел</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки и далее как сделать морской узел</h3>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="clauses-content__card">
-                    <div class="articles__preview">
-                      <picture class="clauses-content__img">
-                        <source srcset="img/pages/catalog/article.webp" type="image/webp">
-                        <img src="img/pages/catalog/article.jpg" alt="Морской узел">
-                      </picture>
-                    </div>
-                    <div class="articles__text clauses-content__text">
-                      <h3 class="articles__title">Как сделать морской узел из крепежной веревки</h3>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="goods__footer clauses__footer">
-                <button class="goods__more clauses__more trans-btn">Показать еще</button>
-                <div class="goods-nav">
-                  <button class="goods-nav__item active">1</button>
-                  <button class="goods-nav__item">2</button>
-                  <button class="goods-nav__item">3</button>
-                  <button class="goods-nav__item">4</button>
-                  <button class="goods-nav__item">5</button>
-                  <button class="goods-nav__item">6</button>
-                  <button class="goods-nav__item">...</button>
-                  <button class="goods-nav__item">22</button>
-                </div>
-              </div>
-            </section>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <button class="scroll-top" title="Наверх">
         <img src="img/icons/scroll-top.svg" alt="">
