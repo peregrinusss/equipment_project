@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20221013174409" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221013174409">
   <title>Снаряжение</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
           <a href="#" class="header__logo">
             <img src="img/pages/logo.svg" alt="Логотип">
           </a>
-          <button class="header__city">Комсомольск-на-Амуре</button>
+          <button data-popup="#popup-geo" class="header__city popup-open">Комсомольск-на-Амуре</button>
         </div>
         <div class="header__right">
           <nav class="header__menu">
@@ -39,7 +39,7 @@
             <span>+7 (910) 133-21-20</span>
             <span>Ежедневно с 10:00 до 22:00</span>
           </a>
-          <button class="header__user">Войти</button>
+          <button class="header__user popup-open" data-popup="#popup-enter">Войти</button>
         </div>
       </div>
       <div class="header-mobile">
@@ -50,7 +50,7 @@
           <img src="img/pages/logo.svg" alt="Логотип">
         </a>
         <div class="header-mobile__btns">
-          <button class="header-mobile__location">
+          <button class="header-mobile__location popup-open" data-popup="#popup-geo">
             <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle r="2.5" transform="matrix(-1 0 0 1 10 8.33203)" stroke="#1B1D1F" stroke-width="1.25"/>
               <path d="M16.875 8.54167C16.875 10.8144 15.4945 13.222 13.8423 15.1088C13.026 16.0411 12.1687 16.8166 11.4354 17.3537C11.0682 17.6227 10.742 17.8245 10.4758 17.9562C10.1903 18.0975 10.0391 18.125 10 18.125V19.375C10.3359 19.375 10.7003 19.2397 11.0301 19.0766C11.3791 18.9039 11.7678 18.6597 12.174 18.3622C12.9875 17.7664 13.9115 16.9272 14.7827 15.9323C16.5055 13.9648 18.125 11.2682 18.125 8.54167H16.875ZM10 18.125C9.96094 18.125 9.80973 18.0975 9.52423 17.9562C9.258 17.8245 8.93184 17.6227 8.56461 17.3537C7.83125 16.8166 6.97401 16.0411 6.15771 15.1088C4.5055 13.222 3.125 10.8144 3.125 8.54167H1.875C1.875 11.2682 3.4945 13.9648 5.21729 15.9323C6.08849 16.9272 7.0125 17.7664 7.82602 18.3622C8.23222 18.6597 8.62091 18.9039 8.96991 19.0766C9.29965 19.2397 9.66406 19.375 10 19.375V18.125ZM3.125 8.54167C3.125 4.87625 6.18633 1.875 10 1.875V0.625C5.5294 0.625 1.875 4.15293 1.875 8.54167H3.125ZM10 1.875C13.8137 1.875 16.875 4.87625 16.875 8.54167H18.125C18.125 4.15293 14.4706 0.625 10 0.625V1.875Z" fill="#1B1D1F"/>
@@ -64,6 +64,15 @@
             </svg> 
           </a>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="geo-yours active">
+      <span class="geo-yours__text">Ваш город Комсомольск-на-Амуре?</span>
+      <div class="geo-yours__btns">
+        <button class="geo-yours__yes geoClose main-btn">Да, верно</button>
+        <button class="geo-yours__no geoClose main-btn popup-open" data-popup="#popup-geo">Нет, другой</button>
       </div>
     </div>
   </div>
@@ -3280,6 +3289,303 @@
           <div class="pickup__map" id="map"></div>
         </div>
       </div>
+      <div class="popup popup-enter enter" id="popup-enter">
+        <div class="popup-buy__body">
+          <button class="popup-buy__close buy-close close-btn">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"/>
+            </svg>
+          </button>
+          <div class="params-mobile__header popup-buy__header">
+            <button class="params-mobile__close buy-close close-btn">
+              <img src="img/icons/close.svg" alt="">
+            </button>
+          </div>
+          <h1 class="popup-buy__title">Вход или регистрация</h1>
+          <form class="popup-buy__form">
+            <div class="popup-buy__input">
+              <span>Номер телефона</span>
+              <input required type="tel" placeholder="+7 (" class="phone">
+            </div>
+            <div class="popup-buy__checkbox checkbox">
+              <input required="" type="checkbox" id="agree5" class="checkbox-input">
+              <label for="agree5" class="checkbox-label">Я принимаю пользовательское соглашение</label>
+            </div>
+            <button class="popup-buy__btn enter-btn main-btn">Получить код</button>
+          </form>
+          <div class="enter-code">
+            <div class="popup-buy__input enter-code__item">
+              <span class="enter-code__text">Повторная отправка кода будет доступна через</span>
+              <button disabled class="main-btn enter-code__time">00:60</button>
+            </div>
+            <div class="popup-buy__input enter-code__item">
+              <span>Код подтверждения</span>
+              <input type="number" placeholder="Введите код подтверждения">
+            </div>
+          </div>
+        </div>
+        <div class="main-overlay"></div>
+      </div>
+      <div class="popup popup-enter-f enter-f">
+        <div class="popup-buy__body">
+          <div class="params-mobile__header popup-buy__header">
+            <span class="enter-f__header">Личный кабинет</span>
+            <button class="params-mobile__close buy-close close-btn enter-f__close">
+              <img src="img/icons/close.svg" alt="">
+            </button>
+          </div>
+          <h1 class="popup-buy__title enter-f__title">Войдите или зарегистрируйтесь</h1>
+          <span class="enter-f__text">Чтобы вы смогли делать покупки, оформлять заказы, а также учавствовать в дисконтной системе</span>
+          <button class="popup-buy__btn enter-btn main-btn">Войдите или зарегистрируйтесь</button>
+          <div class="enter-f__footer">
+            <a href="#" class="enter-f__link enter-f__link-compare">Сравнение</a>
+          </div>
+        </div>
+        <div class="main-overlay"></div>
+      </div>
+      <div class="popup geo" id="popup-geo">
+  <div class="geo__body">
+    <div class="geo__pad geo__pad-first">
+      <h1 class="popup-buy__title">Выберите город</h1>
+      <div class="popup-buy__input geo__input">
+        <input type="text" placeholder="Ваш город...">
+      </div>
+      <div class="geo__main">
+        <button>Москва</button>
+        <button>Санкт-Петербург</button>
+      </div>
+    </div>
+    <div class="geo__pad geo-cities">
+      <div class="geo-cities__items">
+        <span>А</span>
+        <ul>
+          <li>
+            <button>Абакан</button>
+          </li>
+          <li>
+            <button>Архангельск</button>
+          </li>
+          <li>
+            <button>Астрахань</button>
+          </li>
+        </ul>
+      </div>
+      <div class="geo-cities__items">
+        <span>А</span>
+        <ul>
+          <li>
+            <button>Абакан</button>
+          </li>
+          <li>
+            <button>Архангельск</button>
+          </li>
+          <li>
+            <button>Астрахань</button>
+          </li>
+        </ul>
+      </div>
+      <div class="geo-cities__items">
+        <span>А</span>
+        <ul>
+          <li>
+            <button>Абакан</button>
+          </li>
+          <li>
+            <button>Архангельск</button>
+          </li>
+          <li>
+            <button>Астрахань</button>
+          </li>
+        </ul>
+      </div>
+      <div class="geo-cities__items">
+        <span>А</span>
+        <ul>
+          <li>
+            <button>Абакан</button>
+          </li>
+          <li>
+            <button>Архангельск</button>
+          </li>
+          <li>
+            <button>Астрахань</button>
+          </li>
+        </ul>
+      </div>
+      <div class="geo-cities__items">
+        <span>Б</span>
+        <ul>
+          <li>
+            <button>Барнаул</button>
+          </li>
+          <li>
+            <button>Белгород</button>
+          </li>
+          <li>
+            <button>Бийск</button>
+          </li>
+          <li>
+            <button>Братск</button>
+          </li>
+          <li>
+            <button>Брянск</button>
+          </li>
+        </ul>
+      </div>
+      <div class="geo-cities__items">
+        <span>Б</span>
+        <ul>
+          <li>
+            <button>Барнаул</button>
+          </li>
+          <li>
+            <button>Белгород</button>
+          </li>
+          <li>
+            <button>Бийск</button>
+          </li>
+          <li>
+            <button>Братск</button>
+          </li>
+          <li>
+            <button>Брянск</button>
+          </li>
+        </ul>
+      </div>
+      <div class="geo-cities__items">
+        <span>Б</span>
+        <ul>
+          <li>
+            <button>Барнаул</button>
+          </li>
+          <li>
+            <button>Белгород</button>
+          </li>
+          <li>
+            <button>Бийск</button>
+          </li>
+          <li>
+            <button>Братск</button>
+          </li>
+          <li>
+            <button>Брянск</button>
+          </li>
+        </ul>
+      </div>
+      <div class="geo-cities__items">
+        <span>Б</span>
+        <ul>
+          <li>
+            <button>Барнаул</button>
+          </li>
+          <li>
+            <button>Белгород</button>
+          </li>
+          <li>
+            <button>Бийск</button>
+          </li>
+          <li>
+            <button>Братск</button>
+          </li>
+          <li>
+            <button>Брянск</button>
+          </li>
+        </ul>
+      </div>
+      <div class="geo-cities__items">
+        <span>Б</span>
+        <ul>
+          <li>
+            <button>Барнаул</button>
+          </li>
+          <li>
+            <button>Белгород</button>
+          </li>
+          <li>
+            <button>Бийск</button>
+          </li>
+          <li>
+            <button>Братск</button>
+          </li>
+          <li>
+            <button>Брянск</button>
+          </li>
+        </ul>
+      </div>
+      <div class="geo-cities__items">
+        <span>Б</span>
+        <ul>
+          <li>
+            <button>Барнаул</button>
+          </li>
+          <li>
+            <button>Белгород</button>
+          </li>
+          <li>
+            <button>Бийск</button>
+          </li>
+          <li>
+            <button>Братск</button>
+          </li>
+          <li>
+            <button>Брянск</button>
+          </li>
+        </ul>
+      </div>
+      <div class="geo-cities__items">
+        <span>Б</span>
+        <ul>
+          <li>
+            <button>Барнаул</button>
+          </li>
+          <li>
+            <button>Белгород</button>
+          </li>
+          <li>
+            <button>Бийск</button>
+          </li>
+          <li>
+            <button>Братск</button>
+          </li>
+          <li>
+            <button>Брянск</button>
+          </li>
+        </ul>
+      </div>
+      <div class="geo-cities__items">
+        <span>Б</span>
+        <ul>
+          <li>
+            <button>Барнаул</button>
+          </li>
+          <li>
+            <button>Белгород</button>
+          </li>
+          <li>
+            <button>Бийск</button>
+          </li>
+          <li>
+            <button>Братск</button>
+          </li>
+          <li>
+            <button>Брянск</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="popup-buy__close buy-close close-btn">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"/>
+      </svg>
+    </button>
+    <div class="params-mobile__header popup-buy__header">
+      <button class="params-mobile__close buy-close close-btn">
+        <img src="img/icons/close.svg" alt="">
+      </button>
+    </div>
+  </div>
+  <div class="main-overlay"></div>
+</div>
       <button class="scroll-top" title="Наверх">
         <img src="img/icons/scroll-top.svg" alt="">
       </button>
@@ -3364,7 +3670,7 @@
     </div>
   </div>
 </footer>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=d889cf05-49b0-4f2f-b7a7-17edfafbf91b&lang=ru_RU"></script>
-    <script src="js/app.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d889cf05-49b0-4f2f-b7a7-17edfafbf91b&lang=ru_RU&_v=20221013174409"></script>
+    <script src="js/app.js?_v=20221013174409"></script>
 </body>
 </html>
