@@ -7591,9 +7591,10 @@ textarea:focus {
   min-width: 0;
 }
 
-.compare__slider .product-card__sBtns {
+.compare__slider .product-card:hover .product-card__sBtns {
   opacity: 1;
   visibility: visible;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .compare__chars {
