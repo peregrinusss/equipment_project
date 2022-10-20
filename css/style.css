@@ -6363,6 +6363,26 @@ textarea:focus {
   max-width: 190px;
 }
 
+.rate-write__sent {
+  margin-top: 30px;
+}
+
+.rate-write__sent-text {
+  display: block;
+  position: relative;
+  padding-left: 34px;
+}
+
+.rate-write__sent-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icons/comm_sent.svg") no-repeat;
+  background-size: 24px;
+}
+
 .descript-get {
   margin-top: -70px;
 }
@@ -10625,6 +10645,10 @@ textarea:focus {
   .rate-write__btn {
     margin-top: 20px;
     max-width: 100%;
+  }
+
+  .rate-write__sent {
+    margin-top: 20px;
   }
 
   .cart__title {
