@@ -6917,6 +6917,8 @@ textarea:focus {
 .cart-body-item__delete {
   position: absolute;
   right: 0;
+  width: 24px;
+  height: 24px;
   bottom: 30px;
   padding: 0;
   border: none;
