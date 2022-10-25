@@ -5475,7 +5475,6 @@ textarea:focus {
 }
 
 .articles__card:hover {
-  padding-bottom: 36px;
   box-shadow: 0px 0px 0px 2px #82d3ca;
   scale: 0.985;
   transition: 0.2s;
@@ -5500,8 +5499,6 @@ textarea:focus {
 
 .articles__more {
   width: 100%;
-  position: absolute;
-  bottom: -36px;
   opacity: 0;
   z-index: 1;
   visibility: hidden;
@@ -7727,7 +7724,7 @@ textarea:focus {
 
 .compare__sticky.fixed .product-card__preview {
   width: 100px;
-  height: 78px;
+  height: 80px;
   flex-shrink: 0;
   border: 1px solid #D2D9DF;
 }
