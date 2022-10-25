@@ -5475,7 +5475,8 @@ textarea:focus {
 }
 
 .articles__card:hover {
-  box-shadow: 0px 0px 0px 2px #82d3ca;
+  padding-bottom: 44px;
+  box-shadow: rgb(130, 211, 202) 0px 0px 0px 2px;
   scale: 0.985;
   transition: 0.2s;
 }
@@ -5483,7 +5484,8 @@ textarea:focus {
 .articles__card:hover .articles__more {
   opacity: 1;
   visibility: visible;
-  transition: 0.4s;
+  box-shadow: 0px -3px 0px 0px #ffffff, 0px 0px 0px 2px #82d3ca;
+  transition: 0.5s;
 }
 
 .articles__btn {
@@ -5499,6 +5501,7 @@ textarea:focus {
 
 .articles__more {
   width: 100%;
+  position: absolute;
   opacity: 0;
   z-index: 1;
   visibility: hidden;
