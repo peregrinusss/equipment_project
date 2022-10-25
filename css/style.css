@@ -5488,6 +5488,10 @@ textarea:focus {
   transition: 0.5s;
 }
 
+.articles__card .product-card__link {
+  display: block;
+}
+
 .articles__btn {
   font-weight: 700;
   font-size: 14px;
