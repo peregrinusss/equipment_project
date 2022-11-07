@@ -3311,6 +3311,10 @@ textarea:focus {
   border: 1px solid #82D3CA;
 }
 
+.code-input {
+  text-align: center;
+}
+
 /* ------------------------HEADER----------------------- */
 
 .header__hat {
