@@ -1952,6 +1952,11 @@ input[type=number] {
   stroke: #9495A9;
 }
 
+.product-card__sBtn.active svg {
+  fill: #2F3190;
+  stroke: #2F3190;
+}
+
 .product-card__sBtn svg {
   width: 24px;
   height: 24px;
@@ -3313,6 +3318,10 @@ textarea:focus {
 
 .code-input {
   text-align: center;
+}
+
+.page404 {
+  margin-bottom: 60px;
 }
 
 .page404__title {
@@ -7692,57 +7701,9 @@ textarea:focus {
   margin-top: 140px;
 }
 
-.compare__char {
-  border-bottom: 1px solid #D1DAE0;
-}
-
-.compare__char-body {
-  padding: 30px 0;
-}
-
-.compare__char-title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 140%;
-  color: #1B1D1F;
-  cursor: pointer;
-  width: 100%;
-}
-
-.compare__char-title span {
-  position: relative;
-  padding-left: 34px;
-}
-
-.compare__char-title span::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  width: 24px;
-  height: 24px;
-  background: url("../img/icons/arrow_compare.svg") no-repeat;
-  background-size: 24px;
-  transform: rotate(180deg);
-}
-
-.compare__char-title.active span::before {
-  transform: rotate(0);
-}
-
 .compare__lines {
   max-height: auto;
   overflow: hidden;
-}
-
-.compare__lines > :not(:last-child) {
-  padding-bottom: 10px;
-}
-
-.compare__lines.active {
-  padding-top: 20px;
 }
 
 .compare__sticky {
@@ -7810,6 +7771,15 @@ textarea:focus {
   font-size: 16px;
   line-height: 140%;
   color: #333333;
+}
+
+.compare-line__body {
+  padding: 10px 0 30px;
+  border-bottom: 1px solid #D1DAE0;
+}
+
+.compare-line:last-child .compare-line__body {
+  border: none;
 }
 
 .compare-line__items {
@@ -8681,6 +8651,44 @@ textarea:focus {
 
 .profile-hist__subtable-btn:not(:last-child) {
   margin-right: 10px;
+}
+
+.wishes__cards {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.confirm__title {
+  margin-bottom: 10px;
+}
+
+.confirm__title::before {
+  content: "";
+}
+
+.confirm__title::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/icons/checked.svg") no-repeat;
+  background-size: 15px;
+}
+
+.confirm__text span {
+  font-weight: 700;
+}
+
+.confirm__item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.confirm__btn {
+  padding: 17px;
+  margin-top: 30px;
 }
 
 /* ----------------------/PROFILE----------------------- */
@@ -10156,6 +10164,10 @@ textarea:focus {
     font-size: 12px;
   }
 
+  .page404 {
+    margin-bottom: 40px;
+  }
+
   .page404__title {
     font-size: 36px;
   }
@@ -11202,12 +11214,6 @@ textarea:focus {
     margin-top: 30px;
   }
 
-  .compare__char-title {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 14px;
-  }
-
   .compare__lines > :not(:last-child) {
     padding-bottom: 20px;
   }
@@ -11513,6 +11519,47 @@ textarea:focus {
     margin-top: 20px;
   }
 
+  .confirm-aside {
+    display: block;
+    padding: 0 20px 30px;
+  }
+
+  .confirm-aside__title {
+    display: block;
+    border-top: 1px solid #D1DAE0;
+    padding-top: 15px;
+  }
+
+  .confirm__body {
+    padding-bottom: 15px;
+  }
+
+  .confirm__content {
+    gap: 0;
+  }
+
+  .confirm__title {
+    margin-bottom: 10px;
+  }
+
+  .confirm__title::after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-size: 10px;
+  }
+
+  .confirm__btn {
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  .wishes__cards {
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .cert__img {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -11696,6 +11743,10 @@ textarea:focus {
   .compare__sticky.fixed .product-card__text {
     margin-left: 0;
     margin-top: 5px;
+  }
+
+  .confirm__btn {
+    width: 100%;
   }
 }
 
@@ -11989,6 +12040,18 @@ textarea:focus {
 
   .tel-code__form {
     gap: 10px;
+  }
+
+  .confirm-aside {
+    padding: 0 15px 30px;
+  }
+
+  .confirm__body {
+    padding: 30px 15px 15px;
+  }
+
+  .wishes__cards {
+    padding: 0;
   }
 }
 
