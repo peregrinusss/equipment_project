@@ -6430,6 +6430,17 @@ textarea:focus {
   color: #9495A9;
 }
 
+.rate-write__checkbox label a {
+  text-decoration: underline;
+  margin-left: 4px;
+  transition: 0.2s;
+}
+
+.rate-write__checkbox label a:hover {
+  color: #82D3CA;
+  transition: 0.2s;
+}
+
 .rate-write__btn {
   margin-top: 30px;
   padding: 17px 0;
@@ -7319,22 +7330,138 @@ textarea:focus {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding-right: 24px;
-  white-space: nowrap;
+  display: flex;
 }
 
-.order-data__discount::after {
-  content: "";
-  background: url("../img/icons/tooltip.svg") no-repeat;
-  right: 0;
-  top: -8px;
+.order-data__tooltip {
+  margin-left: 5px;
+  margin-top: -8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.order-data__tooltip:hover .order-data__hint {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+.order-data__tooltip img {
   width: 20px;
   height: 20px;
-  background-size: 20px;
+  cursor: pointer;
+}
+
+.order-data__hint {
+  width: 265px;
+  position: absolute;
+  bottom: 35px;
+  right: 51%;
+  transform: translateX(50%);
+  max-width: 265px;
+  background: #FFFFFF;
+  z-index: 2;
+  padding: 15px;
+  box-shadow: 0px 4px 20px rgba(158, 167, 173, 0.3);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.order-data__hint::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 50%;
+  transform: translateX(50%);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #ffffff;
 }
 
 .order-data__input {
   margin-bottom: 0;
+  position: relative;
+}
+
+.order-data__login {
+  width: 440px;
+  padding: 15px;
+  position: absolute;
+  bottom: 88px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(158, 167, 173, 0.3);
+  z-index: 6;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.order-data__login.active {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+.order-data__login::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 20px solid #ffffff;
+}
+
+.order-data__login span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333333;
+  text-align: center;
+}
+
+.order-data__login h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FF8C68;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 34px;
+}
+
+.order-data__login h3::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  background: url("../img/icons/attention.svg") no-repeat;
+  background-size: 24px;
+}
+
+.order-data__login-btns {
+  display: flex;
+  margin-top: 20px;
+}
+
+.order-data__login-btns > :last-child {
+  margin-left: 15px;
+}
+
+.order-data__login-btns button {
+  width: 100%;
+  padding: 17px 0;
 }
 
 .order-aside__nofree {
@@ -10917,6 +11044,23 @@ textarea:focus {
     top: -6px;
   }
 
+  .order-data__hint {
+    font-size: 12px;
+  }
+
+  .order-data__login {
+    bottom: 80px;
+    width: 400px;
+  }
+
+  .order-data__login h3 {
+    font-size: 20px;
+  }
+
+  .order-data__login span {
+    font-size: 14px;
+  }
+
   .order-get__item {
     margin-top: 20px;
   }
@@ -11727,6 +11871,29 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
+  .order-data__hint {
+    width: 100vw;
+  }
+
+  .order-data__login {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .order-data__login-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-data__login-btns > :last-child {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .order-data__login-btns button {
+    max-width: 200px;
+  }
+
   .clauses__footer {
     padding: 0;
   }
@@ -11797,6 +11964,10 @@ textarea:focus {
 
   .cart-body-item__img {
     max-width: 80px;
+  }
+
+  .order-data__hint {
+    width: 220px;
   }
 
   .shops__btn {

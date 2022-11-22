@@ -3092,12 +3092,28 @@
                     <input required="" type="text" placeholder="Введите ФИО">
                   </div>
                   <div class="popup-buy__input order-data__input">
+                    <div class="order-data__login">
+                      <h3>Этот номер авторизирован</h3>
+                      <span>Войдите в свой личный кабинет, чтобы следить за заказами и накапливать бонусы с каждой покупки</span>
+                      <div class="order-data__login-btns">
+                        <button class="trans-btn" id="close-login" type="button">продолжить без входа</button>
+                        <button class="main-btn" id="login-btn" type="button">Войти</button>
+                      </div>
+                    </div>
                     <span class="popup-buy__input-required">Номер телефона</span>
-                    <input required="" type="tel" placeholder="+7 (" class="phone">
+                    <input required="" type="tel" placeholder="+7 (" class="phone" id="phone-validate">
                   </div>
                   <div class="popup-buy__input order-data__input">
-                    <span class="popup-buy__input-required order-data__discount">Номер дисконтной карты</span>
-                    <input type="number" placeholder="Введите номер дисконтной карты">
+                    <div class="order-data__discount">
+                      <span class=" order-data__discount">Номер дисконтной карты</span>
+                      <div class="order-data__tooltip">
+                        <img src="img/icons/tooltip.svg" alt="">
+                        <div class="order-data__hint">
+                          Текст. Получите дисконтную карту со скидкой 5%, совершив покупки на сумму от 100 000 ₽, а также увеличивайте выгоду повышая уровень карты
+                        </div>
+                      </div>
+                    </div>
+                    <input type="number" placeholder="Введите номер дисконтной карты" class="disc-card-number">
                   </div>
                   <div class="popup-buy__input order-data__input">
                     <span class="popup-buy__input-required">Электронная почта</span>
