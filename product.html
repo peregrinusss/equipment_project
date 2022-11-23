@@ -6614,7 +6614,7 @@
             </div>
             <div class="popup-buy__checkbox checkbox">
               <input required="" type="checkbox" id="agree1" class="checkbox-input">
-              <label for="agree1" class="checkbox-label">Я принимаю пользовательское соглашение</label>
+              <label for="agree1" class="checkbox-label">Я принимаю <a href="#">пользовательское соглашение</a></label>
             </div>
             <button class="popup-buy__btn main-btn">Купить</button>
           </form>
@@ -6668,42 +6668,43 @@
         <div class="main-overlay"></div>
       </div>
       <div class="popup popup-enter enter" id="popup-enter">
-        <div class="popup-buy__body">
-          <button class="popup-buy__close buy-close close-btn">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"/>
-            </svg>
-          </button>
-          <div class="params-mobile__header popup-buy__header">
-            <button class="params-mobile__close buy-close close-btn">
-              <img src="img/icons/close.svg" alt="">
-            </button>
-          </div>
-          <h1 class="popup-buy__title">Вход или регистрация</h1>
-          <form class="popup-buy__form">
-            <div class="popup-buy__input">
-              <span>Номер телефона</span>
-              <input required type="tel" placeholder="+7 (" class="phone">
-            </div>
-            <div class="popup-buy__checkbox checkbox">
-              <input required="" type="checkbox" id="agree5" class="checkbox-input">
-              <label for="agree5" class="checkbox-label">Я принимаю пользовательское соглашение</label>
-            </div>
-            <button class="popup-buy__btn enter-btn main-btn">Получить код</button>
-          </form>
-          <div class="enter-code">
-            <div class="popup-buy__input enter-code__item">
-              <span class="enter-code__text">Повторная отправка кода будет доступна через</span>
-              <button disabled class="main-btn enter-code__time">00:60</button>
-            </div>
-            <div class="popup-buy__input enter-code__item">
-              <span>Код подтверждения</span>
-              <input type="number" placeholder="Введите код подтверждения">
-            </div>
-          </div>
-        </div>
-        <div class="main-overlay"></div>
+  <div class="popup-buy__body">
+    <button class="popup-buy__close buy-close close-btn">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"/>
+      </svg>
+    </button>
+    <div class="params-mobile__header popup-buy__header">
+      <button class="params-mobile__close buy-close close-btn">
+        <img src="img/icons/close.svg" alt="">
+      </button>
+    </div>
+    <h1 class="popup-buy__title">Вход или регистрация</h1>
+    <form class="popup-buy__form">
+      <div class="popup-buy__input">
+        <span>Номер телефона</span>
+        <input required type="tel" placeholder="+7 (" class="phone">
       </div>
+      <div class="popup-buy__checkbox checkbox">
+        <input required="" type="checkbox" id="agree5" class="checkbox-input">
+        <label for="agree5" class="checkbox-label">Я принимаю <a href="#">пользовательское соглашение</a></label>
+      </div>
+      <button class="popup-buy__btn enter-btn main-btn">Получить код</button>
+    </form>
+    <div class="enter-code">
+      <div class="popup-buy__input enter-code__item" id="enter-code-item">
+        <span class="enter-code__text">Повторная отправка кода будет доступна через</span>
+        <button disabled class="main-btn enter-code__time">00:60</button>
+      </div>
+      <button class="popup-buy__btn enter-btn-again main-btn">Отправить код повторно</button>
+      <div class="popup-buy__input enter-code__item">
+        <span>Код подтверждения</span>
+        <input type="number" placeholder="Введите код подтверждения">
+      </div>
+    </div>
+  </div>
+  <div class="main-overlay"></div>
+</div>
       <div class="popup popup-enter-f enter-f">
         <div class="popup-buy__body">
           <div class="params-mobile__header popup-buy__header">

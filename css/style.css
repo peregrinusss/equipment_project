@@ -2312,6 +2312,18 @@ input[type=number] {
   cursor: pointer;
   position: relative;
   padding-left: 30px;
+  display: flex;
+}
+
+.checkbox label a {
+  text-decoration: underline;
+  transition: 0.2s;
+  margin-left: 3px;
+}
+
+.checkbox label a:hover {
+  color: #82D3CA;
+  transition: 0.2s;
 }
 
 .checkbox input + label {
@@ -3024,9 +3036,32 @@ input[type=number] {
   height: 100%;
 }
 
+.enter-btn-again {
+  display: none;
+}
+
+.enter-code {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: 0.3s;
+}
+
+.enter-code.active {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  margin-top: 40px;
+  transition: 0.3s;
+}
+
 .enter-code__item {
   margin-top: 40px;
   margin-bottom: 0;
+}
+
+.enter-code__item:first-child {
+  margin-top: 0;
 }
 
 .enter-code__time {
@@ -11968,6 +12003,22 @@ textarea:focus {
 
   .order-data__hint {
     width: 220px;
+  }
+
+  .order__checkbox label {
+    flex-direction: column;
+  }
+
+  .order__checkbox label a {
+    margin-left: 0;
+  }
+
+  .order__checkbox input + label {
+    align-items: flex-start;
+  }
+
+  .order__checkbox input + label::before {
+    top: -3px;
   }
 
   .shops__btn {
