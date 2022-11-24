@@ -4796,12 +4796,19 @@ textarea:focus {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  position: relative;
 }
 
 .filter > :not(:first-child) {
   border-top: 1px solid #D1DAE0;
   margin-top: 30px;
   padding-top: 20px;
+}
+
+.filter > :last-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 15px;
 }
 
 .filter__title {
@@ -4821,6 +4828,42 @@ textarea:focus {
 
 .filter__showall:hover {
   color: #3C3EA5;
+  text-decoration: underline;
+}
+
+.filter-show {
+  width: 160px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(158, 167, 173, 0.3);
+  position: absolute;
+  right: -187px;
+  top: 190px;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333333;
+  z-index: 2;
+}
+
+.filter-show::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 20px solid #ffffff;
+  border-bottom: 15px solid transparent;
+}
+
+.filter-show a {
+  display: block;
+  margin-top: 10px;
+  color: #2F3190;
   text-decoration: underline;
 }
 
@@ -7503,6 +7546,61 @@ textarea:focus {
   position: relative;
 }
 
+.order-data__input-wrap {
+  position: relative;
+}
+
+.order-data__input input {
+  transition: 0.2s;
+  position: relative;
+}
+
+.order-data__input.error input {
+  border: 1px solid #E2383E;
+  color: #E2383E;
+  transition: 0.2s;
+}
+
+.order-data__input.error .order-data__error {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  margin-top: 6px;
+  transition: 0.2s;
+}
+
+.order-data__input.right-disc input {
+  border: 1px solid #389928;
+}
+
+.order-data__input.right-disc .order-data__input-wrap::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  bottom: 0;
+  top: 0;
+  margin: auto 0;
+  width: 16px;
+  height: 16px;
+  background: url("../img/icons/input_right.svg") no-repeat;
+  background-size: 16px;
+}
+
+.order-data__error {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #E2383E;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: 0.2s;
+}
+
+.order-data__error a {
+  text-decoration: underline;
+}
+
 .order-data__linked {
   width: 440px;
   padding: 15px;
@@ -7705,6 +7803,20 @@ textarea:focus {
 
 .order-get__input {
   margin-bottom: 0;
+}
+
+.order-get__input.error input {
+  border: 1px solid #E2383E;
+  color: #E2383E;
+  transition: 0.2s;
+}
+
+.order-get__input.error .order-data__error {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  margin-top: 6px;
+  transition: 0.2s;
 }
 
 .order-get__house {
@@ -9926,6 +10038,7 @@ textarea:focus {
 
   .order__item {
     padding: 30px;
+    padding-bottom: 50px;
   }
 
   .order__point {

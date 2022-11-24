@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20221123220337" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20221123220337">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20221124230736" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221124230736">
   <title>Снаряжение</title>
 </head>
 <body>
@@ -3113,10 +3113,10 @@
                     <span class="popup-buy__input-required">Номер телефона</span>
                     <input required="" type="tel" placeholder="+7 (" class="phone" id="phone-validate">
                   </div>
-                  <div class="popup-buy__input order-data__input">
+                  <div class="popup-buy__input order-data__input" id="input-disc-card-1">
                     <div class="order-data__linked">
                       <h3>Внимание</h3>
-                      <span>Данная карта привязана к номеру +7 (***) *** 45 36. Пожалуйста, авторизуйтесь по этому номеру или обратитесь по тел: 8-910-133-21-20</span>
+                      <span>Данная карта привязана к номеру +7 (***) *** 45 36. Пожалуйста, авторизуйтесь по этому номеру или обратитесь по тел: <a href="tel:+79101332120">8-910-133-21-20</a></span>
                       <button class="main-btn" id="login-btn-2" type="button">Войти</button>
                     </div>
                     <div class="order-data__discount">
@@ -3128,7 +3128,12 @@
                         </div>
                       </div>
                     </div>
-                    <input type="number" placeholder="Введите номер дисконтной карты" class="disc-card-number">
+                    <div class="order-data__input-wrap">
+                      <input type="number" placeholder="Введите номер дисконтной карты" class="disc-card-number">
+                    </div>
+                    <div class="order-data__error">
+                      Данная карта не привязана к данному аккаунту. Привяжите карту в ЛК или свяжитесь с нами по тел: <a href="tel:+79101332120">8-910-133-21-20</a> 
+                    </div>
                   </div>
                   <div class="popup-buy__input order-data__input">
                     <span class="popup-buy__input-required">Электронная почта</span>
@@ -3702,7 +3707,7 @@
     </div>
   </div>
 </footer>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=d889cf05-49b0-4f2f-b7a7-17edfafbf91b&lang=ru_RU&_v=20221123220337"></script>
-    <script src="js/app.js?_v=20221123220337"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d889cf05-49b0-4f2f-b7a7-17edfafbf91b&lang=ru_RU&_v=20221124230736"></script>
+    <script src="js/app.js?_v=20221124230736"></script>
 </body>
 </html>
