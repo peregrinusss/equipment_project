@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20221128041733" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20221128041733">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20221129190040" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221129190040">
   <title>Снаряжение</title>
 </head>
 <body>
@@ -3256,11 +3256,11 @@
             <span class="tel-code__text tel-code__phone">+7 (123) 123-12-31</span>
             <button class="tel-code__change popup-open" data-popup="#popup-tel">Изменить номер</button>
           </div>
-          <form class="tel-code__form">
-            <input type="number" class="code-input">
-            <input type="number" class="code-input">
-            <input type="number" class="code-input">
-            <input type="number" class="code-input">
+          <form class="tel-code__form code-input-wrap">
+            <input type="number" class="code-input" data-index="0">
+            <input type="number" class="code-input" data-index="1">
+            <input type="number" class="code-input" data-index="2">
+            <input type="number" class="code-input" data-index="3">
           </form>
           <button class="tel-code__repeat">Получить код повторно</button>
         </div>
@@ -3389,11 +3389,11 @@
             <span class="tel-code__text">Введите код из SMS, которое мы отправили на номер</span>
             <span class="tel-code__text tel-code__phone">+7 (906) 358-75-05</span>
           </div>
-          <form class="tel-code__form">
-            <input type="number" class="code-input">
-            <input type="number" class="code-input">
-            <input type="number" class="code-input">
-            <input type="number" class="code-input">
+          <form class="tel-code__form code-input-wrap">
+            <input type="number" class="code-input" data-index="0">
+            <input type="number" class="code-input" data-index="1">
+            <input type="number" class="code-input" data-index="2">
+            <input type="number" class="code-input" data-index="3">
           </form>
           <button class="tel-code__repeat">Получить код повторно</button>
         </div>
@@ -3416,11 +3416,11 @@
             <span class="tel-code__text">Введите код который мы отправили на электронную почту</span>
             <span class="tel-code__text tel-code__phone">krutoipperec@mail.ru</span>
           </div>
-          <form class="tel-code__form">
-            <input type="number" class="code-input">
-            <input type="number" class="code-input">
-            <input type="number" class="code-input">
-            <input type="number" class="code-input">
+          <form class="tel-code__form code-input-wrap">
+            <input type="number" class="code-input" data-index="0">
+            <input type="number" class="code-input" data-index="1">
+            <input type="number" class="code-input" data-index="2">
+            <input type="number" class="code-input" data-index="3">
           </form>
           <button class="tel-code__repeat">Получить код повторно</button>
         </div>
@@ -3677,7 +3677,7 @@
       </svg>
     </button>
     <div class="params-mobile__header popup-buy__header">
-      <button class="params-mobile__close buy-close close-btn">
+      <button class="params-mobile__close buy-close close-btn close-enter">
         <img src="img/icons/close.svg" alt="">
       </button>
     </div>
@@ -3703,6 +3703,23 @@
         <span>Код подтверждения</span>
         <input type="number" placeholder="Введите код подтверждения">
       </div>
+    </div>
+  </div>
+  <div class="main-overlay"></div>
+</div>
+      <div class="popup popup-enter-f enter-f">
+  <div class="popup-buy__body">
+    <div class="params-mobile__header popup-buy__header">
+      <span class="enter-f__header">Личный кабинет</span>
+      <button class="params-mobile__close buy-close close-btn enter-f__close">
+        <img src="img/icons/close.svg" alt="">
+      </button>
+    </div>
+    <h1 class="popup-buy__title enter-f__title">Войдите или зарегистрируйтесь</h1>
+    <span class="enter-f__text">Чтобы вы смогли делать покупки, оформлять заказы, а также учавствовать в дисконтной системе</span>
+    <button class="popup-buy__btn enter-btn main-btn popup-open" data-popup="#popup-enter">Войдите или зарегистрируйтесь</button>
+    <div class="enter-f__footer">
+      <a href="#" class="enter-f__link enter-f__link-compare">Сравнение</a>
     </div>
   </div>
   <div class="main-overlay"></div>
@@ -3791,6 +3808,6 @@
     </div>
   </div>
 </footer>
-    <script src="js/app.js?_v=20221128041733"></script>
+    <script src="js/app.js?_v=20221129190040"></script>
 </body>
 </html>

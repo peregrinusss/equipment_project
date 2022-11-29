@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20221128041733" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20221128041733">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20221129190040" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221129190040">
   <title>Снаряжение</title>
 </head>
 <body>
@@ -3263,44 +3263,6 @@
         </div>
         <div class="main-overlay disc-card__close"></div>
       </div>
-      <div class="popup popup-enter enter" id="popup-enter">
-  <div class="popup-buy__body">
-    <button class="popup-buy__close buy-close close-btn">
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
-        <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"/>
-      </svg>
-    </button>
-    <div class="params-mobile__header popup-buy__header">
-      <button class="params-mobile__close buy-close close-btn">
-        <img src="img/icons/close.svg" alt="">
-      </button>
-    </div>
-    <h1 class="popup-buy__title">Вход или регистрация</h1>
-    <form class="popup-buy__form">
-      <div class="popup-buy__input">
-        <span>Номер телефона</span>
-        <input required type="tel" placeholder="+7 (" class="phone">
-      </div>
-      <div class="popup-buy__checkbox checkbox">
-        <input required="" type="checkbox" id="agree5" class="checkbox-input">
-        <label for="agree5" class="checkbox-label">Я принимаю <a href="#">пользовательское соглашение</a></label>
-      </div>
-      <button class="popup-buy__btn enter-btn main-btn" id="getcodeBtn" type="button">Получить код</button>
-    </form>
-    <div class="enter-code">
-      <div class="popup-buy__input enter-code__item" id="enter-code-item">
-        <span class="enter-code__text">Повторная отправка кода будет доступна через</span>
-        <button disabled class="main-btn enter-code__time">00:60</button>
-      </div>
-      <button class="popup-buy__btn enter-btn-again main-btn">Отправить код повторно</button>
-      <div class="popup-buy__input enter-code__item">
-        <span>Код подтверждения</span>
-        <input type="number" placeholder="Введите код подтверждения">
-      </div>
-    </div>
-  </div>
-  <div class="main-overlay"></div>
-</div>
       <div class="popup geo" id="popup-geo">
   <div class="geo__body">
     <div class="geo__pad geo__pad-first">
@@ -3544,6 +3506,61 @@
   </div>
   <div class="main-overlay"></div>
 </div>
+      <div class="popup popup-enter enter" id="popup-enter">
+  <div class="popup-buy__body">
+    <button class="popup-buy__close buy-close close-btn">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"/>
+      </svg>
+    </button>
+    <div class="params-mobile__header popup-buy__header">
+      <button class="params-mobile__close buy-close close-btn close-enter">
+        <img src="img/icons/close.svg" alt="">
+      </button>
+    </div>
+    <h1 class="popup-buy__title">Вход или регистрация</h1>
+    <form class="popup-buy__form">
+      <div class="popup-buy__input">
+        <span>Номер телефона</span>
+        <input required type="tel" placeholder="+7 (" class="phone">
+      </div>
+      <div class="popup-buy__checkbox checkbox">
+        <input required="" type="checkbox" id="agree5" class="checkbox-input">
+        <label for="agree5" class="checkbox-label">Я принимаю <a href="#">пользовательское соглашение</a></label>
+      </div>
+      <button class="popup-buy__btn enter-btn main-btn" id="getcodeBtn" type="button">Получить код</button>
+    </form>
+    <div class="enter-code">
+      <div class="popup-buy__input enter-code__item" id="enter-code-item">
+        <span class="enter-code__text">Повторная отправка кода будет доступна через</span>
+        <button disabled class="main-btn enter-code__time">00:60</button>
+      </div>
+      <button class="popup-buy__btn enter-btn-again main-btn">Отправить код повторно</button>
+      <div class="popup-buy__input enter-code__item">
+        <span>Код подтверждения</span>
+        <input type="number" placeholder="Введите код подтверждения">
+      </div>
+    </div>
+  </div>
+  <div class="main-overlay"></div>
+</div>
+      <div class="popup popup-enter-f enter-f">
+  <div class="popup-buy__body">
+    <div class="params-mobile__header popup-buy__header">
+      <span class="enter-f__header">Личный кабинет</span>
+      <button class="params-mobile__close buy-close close-btn enter-f__close">
+        <img src="img/icons/close.svg" alt="">
+      </button>
+    </div>
+    <h1 class="popup-buy__title enter-f__title">Войдите или зарегистрируйтесь</h1>
+    <span class="enter-f__text">Чтобы вы смогли делать покупки, оформлять заказы, а также учавствовать в дисконтной системе</span>
+    <button class="popup-buy__btn enter-btn main-btn popup-open" data-popup="#popup-enter">Войдите или зарегистрируйтесь</button>
+    <div class="enter-f__footer">
+      <a href="#" class="enter-f__link enter-f__link-compare">Сравнение</a>
+    </div>
+  </div>
+  <div class="main-overlay"></div>
+</div>
       <button class="scroll-top" title="Наверх">
         <img src="img/icons/scroll-top.svg" alt="">
       </button>
@@ -3628,6 +3645,6 @@
     </div>
   </div>
 </footer>
-    <script src="js/app.js?_v=20221128041733"></script>
+    <script src="js/app.js?_v=20221129190040"></script>
 </body>
 </html>

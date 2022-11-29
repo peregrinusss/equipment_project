@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* --------------------------NULL----------------------- */
 
 /* Box sizing rules */
@@ -1649,6 +1651,8 @@ input[type=number] {
 }
 
 .menu-footer__link {
+  background: none;
+  border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1856,6 +1860,14 @@ input[type=number] {
 
 .product-card__img {
   width: 100%;
+}
+
+.product-card__img-choose {
+  display: none;
+}
+
+.product-card__img-choose.active {
+  display: block;
 }
 
 .product-card__img img {
@@ -2221,10 +2233,12 @@ input[type=number] {
 }
 
 .product-color__items {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 30px);
-  gap: 2px;
+  display: flex;
   justify-content: space-between;
+}
+
+.product-color__items > :not(:last-child) {
+  margin-right: 4px;
 }
 
 .product-color__item {
@@ -2941,7 +2955,6 @@ input[type=number] {
 
 .popup-have__hat {
   display: none;
-  margin-top: 74px;
   padding: 0 20px;
 }
 
@@ -3211,11 +3224,6 @@ input[type=number] {
   background: url("../img/icons/quit.svg") no-repeat;
 }
 
-.entered {
-  opacity: 1;
-  visibility: visible;
-}
-
 .entered__body {
   margin-top: 54px;
 }
@@ -3472,21 +3480,32 @@ textarea:focus {
   margin-bottom: 20px;
 }
 
-.popup-tocart__img {
-  max-width: 115px;
-}
-
 .popup-tocart__amount {
   max-width: 160px;
   height: 48px;
 }
 
-.popup-tocart__prod {
-  margin-left: 10px;
-}
-
 .popup-tocart__prod h3 {
   margin-bottom: 18px;
+}
+
+.error-input {
+  position: relative;
+}
+
+.error-input input {
+  border: 1px solid #E2383E;
+  color: rgba(226, 56, 62, 0.6);
+  transition: 0.2s;
+}
+
+.error-input > :last-child {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #E2383E;
+  position: absolute;
+  margin-top: 2px;
 }
 
 /* ------------------------HEADER----------------------- */
@@ -7296,12 +7315,18 @@ textarea:focus {
   font-size: 14px;
   line-height: 120%;
   color: #9495A9;
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .cart-body-promo__form {
   display: flex;
-  margin-top: 10px;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.cart-body-promo-input {
+  width: 100%;
+  max-width: 320px;
 }
 
 .cart-body-promo__input {
@@ -7314,7 +7339,6 @@ textarea:focus {
   padding: 0 14px;
   height: 42px;
   width: 100%;
-  max-width: 320px;
 }
 
 .cart-body-promo__input::-moz-placeholder {
@@ -7398,13 +7422,20 @@ textarea:focus {
 
 /* -----------------------SHOPS----------------------- */
 
-.shops__title {
-  margin-bottom: 40px;
+.shops__wrap {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 50px;
 }
 
 .shops__nav {
   display: flex;
   margin-bottom: 30px;
+}
+
+.shops__tabs {
+  display: flex;
+  margin-left: 55px;
 }
 
 .shops__item {
@@ -7425,6 +7456,19 @@ textarea:focus {
 
 .shops__map {
   height: 720px;
+}
+
+.shops__cities {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.shops__cities a:not(:last-child) {
+  margin-right: 40px;
+}
+
+.shops__city {
+  font-size: 24px;
 }
 
 .shops-card {
@@ -9415,6 +9459,37 @@ textarea:focus {
 
 /* -----------------------/FOOTER----------------------- */
 
+.balloon {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.balloon__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #272837;
+  margin-bottom: 20px;
+}
+
+.balloon__table {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #272837;
+  margin-bottom: 10px;
+}
+
+.balloon__tel {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #272837;
+}
+
 /* --------------------------MEDIA----------------------- */
 
 /* --------------------------/MEDIA----------------------- */
@@ -9563,6 +9638,11 @@ textarea:focus {
     height: 48px;
   }
 
+  .product-card__cart-done {
+    width: 100%;
+    bottom: 0;
+  }
+
   .product-card__btns {
     height: 121px;
     bottom: -121px;
@@ -9578,6 +9658,7 @@ textarea:focus {
 
   .main-slider .product-card:hover {
     padding-bottom: 290px;
+    scale: 0.98;
     transition: 0.3s;
   }
 
@@ -10111,10 +10192,6 @@ textarea:focus {
     font-size: 12px;
   }
 
-  .cart-body-promo__form {
-    margin-top: 5px;
-  }
-
   .order__content {
     gap: 20px;
   }
@@ -10352,6 +10429,14 @@ textarea:focus {
 
   .order-get__form {
     grid-template-columns: 1fr;
+  }
+
+  .shops__city {
+    font-size: 20px;
+  }
+
+  .shops__cities {
+    margin-bottom: 40px;
   }
 
   .profile-hist__body {
@@ -11707,16 +11792,12 @@ textarea:focus {
     display: flex;
   }
 
-  .shops__title {
-    margin-bottom: 20px;
-  }
-
   .shops__cards {
     margin-bottom: 40px;
   }
 
   .shops__nav {
-    margin-bottom: 20px;
+    margin-left: 30px;
   }
 
   .shops-card__title {
@@ -11741,6 +11822,38 @@ textarea:focus {
 
   .shops__map {
     height: 410px;
+  }
+
+  .shops__container {
+    padding: 0;
+  }
+
+  .shops__city {
+    flex-shrink: 0;
+    margin-bottom: 1px;
+  }
+
+  .shops__city:first-child {
+    margin-left: 20px;
+  }
+
+  .shops__city:last-child {
+    margin-right: 20px;
+  }
+
+  .shops__cities {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* Скрываем scrollbar для Chrome, Safari и Opera */
+    /* Скрываем scrollbar для IE, Edge и Firefox */
+    -ms-overflow-style: none;
+    /* IE и Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .shops__cities::-webkit-scrollbar {
+    display: none;
   }
 
   .compare {
@@ -12309,6 +12422,7 @@ textarea:focus {
 
   .cart-body-promo__form {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .cart-body-promo__btn {
@@ -12316,7 +12430,7 @@ textarea:focus {
     margin-top: 15px;
   }
 
-  .cart-body-promo__input {
+  .cart-body-promo-input {
     max-width: 100%;
   }
 
@@ -12454,6 +12568,10 @@ textarea:focus {
 
   .shops__btn {
     font-size: 12px;
+  }
+
+  .shops__city {
+    font-size: 20px;
   }
 }
 
@@ -12679,6 +12797,22 @@ textarea:focus {
 
   .clauses-content__cards {
     grid-template-columns: 1fr;
+  }
+
+  .shops__container {
+    padding: 0;
+  }
+
+  .shops__city {
+    flex-shrink: 0;
+  }
+
+  .shops__city:first-child {
+    margin-left: 10px;
+  }
+
+  .shops__city:last-child {
+    margin-right: 10px;
   }
 
   .compare__char-title {
