@@ -3295,297 +3295,125 @@
 
       <section class="profile">
         <div class="main-container">
-          <h1 class="profile__title title-h1">Личный кабинет</h1>
-          <div class="shops__nav profile__menu">
-            <a href="#" class="descript-tabs__btn active">Мой профиль</a>
-            <a href="#" class="descript-tabs__btn">Моя корзина</a>
-            <a href="#" class="descript-tabs__btn">История покупок</a>
-            <a href="#" class="descript-tabs__btn">Мои желания</a>
-            <a href="#" class="descript-tabs__btn">Дисконтная система</a>
-            <a href="#" class="descript-tabs__btn">Новостные рассылки</a>
+          <h1 class="cart__title title-h1">Ваш заказ</h1>
+          <div class="print-version">
+            <ul class="print-version__ul">
+							<li class="print-version__li">
+								<p class="print-version__title">Номер заказа:</p>
+								<p>2384928795</p>
+							</li>
+							<li class="print-version__li">
+								<p class="print-version__title">Получатель:</p>
+								<p>Златоусова Серафима Анатольевна</p>
+							</li>
+							<li class="print-version__li">
+								<p class="print-version__title">Оплата:</p>
+								<p>При получении</p>
+							</li>
+							<li class="print-version__li">
+								<p class="print-version__title">Способ получения:</p>
+								<p>Самовывоз</p>
+							</li>
+							<li class="print-version__li">
+								<p class="print-version__title">Адрес получателя:</p>
+								<p>г. Нижний Новгород, ул. Снежная, д.23</p>
+							</li>
+						</ul>
           </div>
-          <a href="#" class="profile__back title-h1">Мой профиль</a>
           <div class="profile__body">
-            <form class="profile__form">
-              <div class="profile__item">
-                <h3 class="order-get__title">Личная информация</h3>
-                <div class="profile__grid">
-                  <div class="popup-buy__input order-data__input">
-                    <span>ФИО</span>
-                    <input type="text" placeholder="Введите ФИО">
-                  </div>
-                  <div class="popup-buy__input order-data__input">
-                    <span>Дата рождения</span>
-                    <div class="profile__date">
-                      <input type="number" placeholder="День">
-                      <input type="number" placeholder="Месяц">
-                      <input type="number" placeholder="Год">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="profile__item">
-                <h3 class="order-get__title">Адрес</h3>
-                <div class="profile__grid">
-                  <div class="popup-buy__input order-get__input">
-                    <span>Город</span>
-                    <input type="text" placeholder="Введите город">
-                  </div>
-                  <div class="popup-buy__input order-get__input">
-                    <span>Улица</span>
-                    <input type="text" placeholder="Введите улицу">
-                  </div>
-                  <div class="order-get__house">
-                    <div class="popup-buy__input order-get__input">
-                      <span>Дом</span>
-                      <input type="text" placeholder="Введите дом">
-                    </div>
-                    <div class="popup-buy__input order-get__input">
-                      <span>Кв./офис</span>
-                      <input type="number" placeholder="Квартира/офис">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="profile__item">
-                <div class="profile__grid">
-                  <div class="profile__contacts order-get__house">
-                    <div class="profile__contact">
-                      <h3 class="order-get__title">Номер телефона</h3>
-                      <span>+7 (906) 358-75-05</span>
-                      <button type="button" class="order-get__pickup-btn profile__sbtn popup-open" data-popup="#popup-tel">Изменить</button>
-                    </div>
-                    <div class="profile__contact">
-                      <h3 class="order-get__title">Электронная почта</h3>
-                      <span class="none">Не указана</span>
-                      <button type="button" class="order-get__pickup-btn profile__sbtn popup-open" data-popup="#popup-email">Добавить</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="profile__item">
-                <h3 class="order-get__title">Дисконтная карта</h3>
-                <span class="profile-card__number">7878787801</span>
-                <span class="profile-card__danger">Ваша карта привязана к другому номеру</span>
-                <button class="profile-card__change popup-open" data-popup="#popup-change" type="button">Восстановить привязку карты</button>
-              </div>
-              <button class="profile__btn main-btn">Сохранить</button>
-            </form>
+            <div class="print__body">
+              <table class="print__table">
+                <thead>
+                  <tr>
+                    <td>№</td>
+                    <td>Наименование товара</td>
+                    <td>Код товара</td>
+                    <td>Артикул</td>
+                    <td>Производитель</td>
+                    <td>Размер</td>
+                    <td>Цвет</td>
+                    <td>Количество</td>
+                    <td>Цена</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Веревка Millet CORDELETTE</td>
+                    <td>124</td>
+                    <td>546786</td>
+                    <td>Millet</td>
+                    <td>12м</td>
+                    <td>Рубиновый</td>
+                    <td>2</td>
+                    <td><b>1500 руб.</b></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Веревка Millet CORDELETTE</td>
+                    <td>548</td>
+                    <td>546312</td>
+                    <td>Millet</td>
+                    <td>12м</td>
+                    <td>Рубиновый</td>
+                    <td>3</td>
+                    <td><b>14500 руб.</b></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Веревка Millet CORDELETTE</td>
+                    <td>348</td>
+                    <td>513412</td>
+                    <td>Millet</td>
+                    <td>12м</td>
+                    <td>Рубиновый</td>
+                    <td>28</td>
+                    <td><b>14500 руб.</b></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Веревка Millet CORDELETTE</td>
+                    <td>124</td>
+                    <td>513412</td>
+                    <td>Millet</td>
+                    <td>12м</td>
+                    <td>Рубиновый</td>
+                    <td>1</td>
+                    <td><b>2000 руб.</b></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Веревка Millet CORDELETTE</td>
+                    <td>666</td>
+                    <td>513412</td>
+                    <td>Millet</td>
+                    <td>12м</td>
+                    <td>Рубиновый</td>
+                    <td>13</td>
+                    <td><b>13000 руб.</b></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Веревка Millet CORDELETTE</td>
+                    <td>613</td>
+                    <td>513412</td>
+                    <td>Millet</td>
+                    <td>12м</td>
+                    <td>Рубиновый</td>
+                    <td>8</td>
+                    <td><b>23000 руб.</b></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="print__total">
+              <span class="print__total-title">Общая сумма: <span>240 457 руб.</span></span>
+              <button class="print__btn main-btn">Распечатать</button>
+            </div>
           </div>
         </div>
       </section>
 
-      <div class="popup tel" id="popup-tel">
-        <div class="popup-buy__body tel__body">
-          <button class="popup-buy__close close-btn">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"></path>
-            </svg>
-          </button>
-          <div class="params-mobile__header popup-buy__header">
-            <button class="params-mobile__close close-btn">
-              <img src="img/icons/close.svg" alt="">
-            </button>
-          </div>
-          <h1 class="popup-buy__title">Укажите новый номер</h1>
-          <form class="tel__form">
-            <div class="popup-buy__input order-data__input">
-              <span>Номер телефона</span>
-              <input required="" type="tel" placeholder="+7 (" class="phone">
-            </div>
-            <button class="tel__btn main-btn popup-open" data-popup="#popup-telCode" type="button">Получить код</button>
-          </form>
-        </div>
-        <div class="main-overlay"></div>
-      </div>
-      <div class="popup tel-code" id="popup-telCode">
-        <div class="popup-buy__body tel-code__body">
-          <button class="popup-buy__close close-btn">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"></path>
-            </svg>
-          </button>
-          <div class="params-mobile__header popup-buy__header">
-            <button class="params-mobile__close close-btn">
-              <img src="img/icons/close.svg" alt="">
-            </button>
-          </div>
-          <h1 class="popup-buy__title tel-code__title">Введите код</h1>
-          <div class="tel-code__header">
-            <span class="tel-code__text">Введите код из SMS, которое мы отправили на номер</span>
-            <span class="tel-code__text tel-code__phone">+7 (123) 123-12-31</span>
-            <button class="tel-code__change popup-open" data-popup="#popup-tel">Изменить номер</button>
-          </div>
-          <form class="tel-code__form code-input-wrap">
-            <input type="number" class="code-input" data-index="0">
-            <input type="number" class="code-input" data-index="1">
-            <input type="number" class="code-input" data-index="2">
-            <input type="number" class="code-input" data-index="3">
-          </form>
-          <button class="tel-code__repeat">Получить код повторно</button>
-        </div>
-        <div class="main-overlay"></div>
-      </div>
-      <div class="popup email" id="popup-email">
-        <div class="popup-buy__body email__body">
-          <button class="popup-buy__close close-btn">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"></path>
-            </svg>
-          </button>
-          <div class="params-mobile__header popup-buy__header">
-            <button class="params-mobile__close close-btn">
-              <img src="img/icons/close.svg" alt="">
-            </button>
-          </div>
-          <h1 class="popup-buy__title tel-code__title">Укажите электронную почту</h1>
-          <div class="tel-code__header">
-            <span class="tel-code__text">Введите электронную почту и подтвердите ее, перейдя по ссылке из письма, которое будет отправлено после сохранения данных</span>
-          </div>
-          <form class="email__form">
-            <div class="popup-buy__input order-data__input">
-              <span>Электронная почта</span>
-              <input required="" type="email" placeholder="Введите вашу почту">
-            </div>
-            <div class="rate-write__checkbox email__checkbox checkbox">
-              <input required="" type="checkbox" id="agree" class="checkbox-input">
-              <label for="agree" class="checkbox-label">Даю согласие на получение информации о специальных предложениях</label>
-            </div>
-            <button class="email__btn main-btn popup-open" data-popup="#popup-emailDone" type="button">Сохранить</button>
-          </form>
-        </div>
-        <div class="main-overlay"></div>
-      </div>
-      <div class="popup email-done" id="popup-emailDone">
-        <div class="popup-buy__body email-done__body">
-          <button class="popup-buy__close close-btn">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"></path>
-            </svg>
-          </button>
-          <div class="params-mobile__header popup-buy__header">
-            <button class="params-mobile__close close-btn">
-              <img src="img/icons/close.svg" alt="">
-            </button>
-          </div>
-          <div class="email-done__img">
-            <svg width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="3.5" y="12" width="35" height="28" rx="8.75" stroke="#1B1D1F" stroke-width="2.625"/>
-              <path d="M10.5 20.75L18.9 27.05C20.1444 27.9833 21.8556 27.9833 23.1 27.05L31.5 20.75" stroke="#1B1D1F" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="26.5" y="0.5" width="23" height="23" rx="11.5" fill="#82D3CA" stroke="#82D3CA"/>
-              <path d="M32 10.5833L36.9655 16L44 6" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-            </svg>   
-          </div>
-          <h1 class="popup-buy__title tel-code__title email-done__title">Ваша электронная почта успешно изменена. Осталось только подтвердить!</h1>
-          <span class="tel-code__text">Для подтверждения перейдите по ссылке, которая была отправлена на указанную электронную почту</span>
-        </div>
-        <div class="main-overlay"></div>
-      </div>
-      <div class="popup change-modal" id="popup-change">
-        <div class="popup-buy__body email__body">
-          <button class="popup-buy__close close-btn">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"></path>
-            </svg>
-          </button>
-          <div class="params-mobile__header popup-buy__header">
-            <button class="params-mobile__close close-btn">
-              <img src="img/icons/close.svg" alt="">
-            </button>
-          </div>
-          <h1 class="popup-buy__title tel-code__title">Смена номера, привязанного к дисконтной карте</h1>
-          <div class="shops__nav profile__menu change-modal__tabs">
-            <div data-change="#changeTab-1" class="descript-tabs__btn change-modal__tab active">По номеру телефона</div>
-            <div data-change="#changeTab-2" class="descript-tabs__btn change-modal__tab">По электронной почте</div>
-          </div>
-          <div class="change-modal__items">
-            <div id="changeTab-1" class="change-modal__item active">
-              <span class="tel-code__text">Вам придет уведомление на номер: <br> +7 (***) ***-75-05, если у вас нет доступа к этому номеру, восстановите привязку по почте или позвоните по номеру 8-910-133-21-20</span>
-              <form class="change-modal__form">
-                <div class="popup-buy__input order-data__input">
-                  <span>Введите новый номер телефона</span>
-                  <input required="" type="tel" placeholder="+7 (" class="phone">
-                </div>
-                <div class="rate-write__checkbox email__checkbox checkbox">
-                  <input required="" type="checkbox" id="agree1" class="checkbox-input">
-                  <label for="agree1" class="checkbox-label">Я принимаю <a href="#">пользовательское соглашение</a></label>
-                </div>
-                <button class="email__btn main-btn popup-open" data-popup="#popup-changeTel" type="button">Получить код</button>
-              </form>
-            </div>
-            <div id="changeTab-2" class="change-modal__item">
-              <span class="tel-code__text">Письмо с кодом для восстановления придет вам на почту:</span>
-              <span class="tel-code__text">krut*********@mail.ru</span>
-              <form class="change-modal__form">
-                <div class="popup-buy__input order-data__input">
-                  <span>Новая электронная почта</span>
-                  <input required="" type="email" placeholder="Введите новую почту">
-                </div>
-                <div class="rate-write__checkbox email__checkbox checkbox">
-                  <input required="" type="checkbox" id="agree2" class="checkbox-input">
-                  <label for="agree2" class="checkbox-label">Я принимаю <a href="#">пользовательское соглашение</a></label>
-                </div>
-                <button class="email__btn main-btn popup-open" data-popup="#popup-changeEmail" type="button">Получить код</button>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="main-overlay"></div>
-      </div>
-      <div class="popup change-tel-code" id="popup-changeTel">
-        <div class="popup-buy__body tel-code__body">
-          <button class="popup-buy__close close-btn">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"></path>
-            </svg>
-          </button>
-          <div class="params-mobile__header popup-buy__header">
-            <button class="params-mobile__close close-btn">
-              <img src="img/icons/close.svg" alt="">
-            </button>
-          </div>
-          <h1 class="popup-buy__title tel-code__title">Введите код</h1>
-          <div class="tel-code__header">
-            <span class="tel-code__text">Введите код из SMS, которое мы отправили на номер</span>
-            <span class="tel-code__text tel-code__phone">+7 (906) 358-75-05</span>
-          </div>
-          <form class="tel-code__form code-input-wrap">
-            <input type="number" class="code-input" data-index="0">
-            <input type="number" class="code-input" data-index="1">
-            <input type="number" class="code-input" data-index="2">
-            <input type="number" class="code-input" data-index="3">
-          </form>
-          <button class="tel-code__repeat">Получить код повторно</button>
-        </div>
-        <div class="main-overlay"></div>
-      </div>
-      <div class="popup change-email-code" id="popup-changeEmail">
-        <div class="popup-buy__body tel-code__body">
-          <button class="popup-buy__close close-btn">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="#1B1D1F" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6569 1.8181C12.0644 1.4106 12.0644 0.749905 11.6569 0.342401C11.2494 -0.0651026 10.5887 -0.0651025 10.1812 0.342401L6 4.52355L1.81885 0.3424C1.41134 -0.065103 0.75065 -0.0651035 0.343146 0.3424C-0.0643575 0.749904 -0.0643571 1.4106 0.343146 1.8181L4.5243 5.99925L0.343145 10.1804C-0.0643579 10.5879 -0.0643584 11.2486 0.343145 11.6561C0.750649 12.0636 1.41134 12.0636 1.81885 11.6561L6 7.47496L10.1812 11.6561C10.5887 12.0636 11.2493 12.0636 11.6569 11.6561C12.0644 11.2486 12.0644 10.5879 11.6569 10.1804L7.4757 5.99925L11.6569 1.8181Z"></path>
-            </svg>
-          </button>
-          <div class="params-mobile__header popup-buy__header">
-            <button class="params-mobile__close close-btn">
-              <img src="img/icons/close.svg" alt="">
-            </button>
-          </div>
-          <h1 class="popup-buy__title tel-code__title">Введите код</h1>
-          <div class="tel-code__header">
-            <span class="tel-code__text">Введите код который мы отправили на электронную почту</span>
-            <span class="tel-code__text tel-code__phone">krutoipperec@mail.ru</span>
-          </div>
-          <form class="tel-code__form code-input-wrap">
-            <input type="number" class="code-input" data-index="0">
-            <input type="number" class="code-input" data-index="1">
-            <input type="number" class="code-input" data-index="2">
-            <input type="number" class="code-input" data-index="3">
-          </form>
-          <button class="tel-code__repeat">Получить код повторно</button>
-        </div>
-        <div class="main-overlay"></div>
-      </div>
       <div class="popup geo" id="popup-geo">
   <div class="geo__body">
     <div class="geo__pad geo__pad-first">
