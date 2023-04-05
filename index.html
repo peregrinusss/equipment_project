@@ -6,118 +6,227 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20221206001432" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20221206001432">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Обзорная страница</title>
 </head>
     <style>
-        li {
-            list-style: inherit;
-            font-size: 20px;
-        }
-        .index {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 15px;
-        }
-        a:hover {
-            color: crimson;
-            transition: 0.2s;
-        }
-        a {
-            transition: 0.2s;
-        }
+  @keyframes gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+  html, body {
+    height: 100%;
+    color: #fff;
+    background: -o-linear-gradient(310deg, #000000, #04523c);
+    background: linear-gradient(140deg, #0c0c0c, #03515a);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    animation: gradient 10s infinite;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  html {
+    height: 200% !important;
+  }
+
+  li {
+    list-style: none;
+    list-style-type: decimal;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .index {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 15px;
+  }
+  h1 {
+    width: fit-content;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 130%;
+    background-image: linear-gradient(to right, #5cc889, #2b8bbb);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  a {
+    background-image: linear-gradient(
+      to right,
+      #1dd994,
+      #1dd994 50%,
+      #ffffff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a::before{
+    content: '';
+    background: #1dd994;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  a::after{
+    content: '';
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover {
+    background-position: 0;
+  }
+
+  a:hover::before{
+    width: 100%;
+  }
+  a:hover::after{
+    width: 0;
+  }
+
+  .disc {
+    display: block;
+    font-size: 16px;
+    margin: 40px 0 50px;
+  }
+
+  .stack {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+  }
+  .stack span {
+    font-size: 22px;
+    font-weight: 600;
+    color: #817f7f;
+  }
     </style>
 <body>
     <div class="index">
-        <h1>Адаптивная верстка "Снаряжение"</h1>
+        <div class="stack">
+            <span>Html</span>
+            <span>Scss</span>
+            <span>Js (ES6)</span>
+            <span>Js libraries</span>
+            <span>Gulp</span>
+            <span>Bem</span>
+          </div>
+        <h1>Разработка верстки интернет-магазина "Снаряжение"</h1>
+        <span class="disc">Ниже приведены ссылки на страницы проекта. Для вашего удобства страницы открываются в новом окне.</span>
         <ol>
             <li>
-                <a href="main-page.html">Главная</a>
+                <a href="main-page.html" target="_blank">Главная</a>
             </li>
             <li>
-                <a href="main-page-entered.html">Главная: мобильный личный кабинет</a>
+                <a href="main-page-entered.html" target="_blank">Главная: мобильный личный кабинет</a>
             </li>
             <li>
-                <a href="catalog.html">Каталог</a>
+                <a href="catalog.html" target="_blank">Каталог</a>
             </li>
             <li>
-                <a href="category.html">Страница категории</a>
+                <a href="category.html" target="_blank">Страница категории</a>
             </li>
             <li>
-                <a href="product.html">Карточка товара</a>
+                <a href="product.html" target="_blank">Карточка товара</a>
             </li>
             <li>
-                <a href="cart.html">Корзина</a>
+                <a href="cart.html" target="_blank">Корзина</a>
             </li>
             <li>
-                <a href="order.html">Оформление заказа</a>
+                <a href="order.html" target="_blank">Оформление заказа</a>
             </li>
             <li>
-                <a href="order-free.html">Оформление заказа (бесплатная доставка)</a>
+                <a href="order-free.html" target="_blank">Оформление заказа (бесплатная доставка)</a>
             </li>
             <li>
-                <a href="confirm.html">Подтверждение заказа</a>
+                <a href="confirm.html" target="_blank">Подтверждение заказа</a>
             </li>
             <li>
-                <a href="print.html">Версия для печати</a>
+                <a href="print.html" target="_blank">Версия для печати</a>
             </li>
             <li>
-                <a href="compare.html">Сравнение товаров</a>
+                <a href="compare.html" target="_blank">Сравнение товаров</a>
             </li>
             <li>
-                <a href="clauses.html">Статьи</a>
+                <a href="clauses.html" target="_blank">Статьи</a>
             </li>
             <li>
-                <a href="clause.html">Статья</a>
+                <a href="clause.html" target="_blank">Статья</a>
             </li>
             <li>
-                <a href="clause-product.html">Статья из карточки товара</a>
+                <a href="clause-product.html" target="_blank">Статья из карточки товара</a>
             </li>
             <li>
-                <a href="shops-1.html">Список магазинов Нижний Новгород</a>
+                <a href="shops-1.html" target="_blank">Список магазинов Нижний Новгород</a>
             </li>
             <li>
-                <a href="shops-2.html">Список магазинов Чебоксары</a>
+                <a href="shops-2.html" target="_blank">Список магазинов Чебоксары</a>
             </li>
             <li>
-                <a href="profile.html">ЛК: мой профиль</a>
+                <a href="profile.html" target="_blank">ЛК: мой профиль</a>
             </li>
             <li>
-                <a href="profile-card.html">ЛК: мой профиль привязанная дисконтная карта</a>
+                <a href="profile-card.html" target="_blank">ЛК: мой профиль привязанная дисконтная карта</a>
             </li>
             <li>
-                <a href="profile-card-change.html">ЛК: мой профиль смена номера дисконтной карты</a>
+                <a href="profile-card-change.html" target="_blank">ЛК: мой профиль смена номера дисконтной карты</a>
             </li>
             <li>
-                <a href="profile-cart.html">ЛК: моя корзина</a>
+                <a href="profile-cart.html" target="_blank">ЛК: моя корзина</a>
             </li>
             <li>
-                <a href="history.html">ЛК: история покупок</a>
+                <a href="history.html" target="_blank">ЛК: история покупок</a>
             </li>
             <li>
-                <a href="wishes.html">ЛК: мои желания</a>
+                <a href="wishes.html" target="_blank">ЛК: мои желания</a>
             </li>
             <li>
-                <a href="profile-disc.html">ЛК: дисконтная система</a>
+                <a href="profile-disc.html" target="_blank">ЛК: дисконтная система</a>
             </li>
             <li>
-                <a href="profile-disc-available.html">ЛК: дисконтная система (карта доступна)</a>
+                <a href="profile-disc-available.html" target="_blank">ЛК: дисконтная система (карта доступна)</a>
             </li>
             <li>
-                <a href="profile-disc-five.html">ЛК: дисконтная система (5%)</a>
+                <a href="profile-disc-five.html" target="_blank">ЛК: дисконтная система (5%)</a>
             </li>
             <li>
-                <a href="profile-disc-ten.html">ЛК: дисконтная система (10%)</a>
+                <a href="profile-disc-ten.html" target="_blank">ЛК: дисконтная система (10%)</a>
             </li>
             <li>
-                <a href="profile-disc-fifteen.html">ЛК: дисконтная система (15%)</a>
+                <a href="profile-disc-fifteen.html" target="_blank">ЛК: дисконтная система (15%)</a>
             </li>
             <li>
-                <a href="profile-mailing.html">ЛК: новостные рассылки</a>
+                <a href="profile-mailing.html" target="_blank">ЛК: новостные рассылки</a>
             </li>
             <li>
-                <a href="profile-mailing-done.html">ЛК: новостные рассылки (подключенная почта)</a>
+                <a href="profile-mailing-done.html" target="_blank">ЛК: новостные рассылки (подключенная почта)</a>
             </li>
             <li>
                 <a href="404.html">404</a>
